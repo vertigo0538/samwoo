@@ -23,11 +23,6 @@
 							<li>
 								<span>성함</span>
 								<input type="text" name="name">	
-								@if(count($errors) > 0)
-                                    @foreach($errors -> all() as $error)
-                                        {{$error}}
-                                    @endforeach
-                                @endif
 							</li>
 							<li>
 								<span>상호명</span>

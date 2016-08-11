@@ -5,6 +5,24 @@
 
     
 <script>
+function validation(){
+   $common1 = $(".select_box_wrap").find(".common1").val();
+   $common2 = $(".select_box_wrap").find(".common2").val();
+   $common3 = $(".select_box_wrap").find(".common3").val();
+   $common4 = $(".select_box_wrap").find(".common4").val();
+   if($common1 == "선택해주세요"){
+    alert("선택해!");
+    return false;     
+   } else if($common2 == "선택해주세요"){
+    alert("선택해!");
+    return false;     
+    }// else if($common3 == "선택해주세요"){
+   //  alert("선택해!");
+   //  return false;     
+   // } 
+    return true;
+    
+}
 var _A_1Depth = ["트레일러","윙바디(WING-CAR)","탑차(TOP_CAR)","덤프/특장차 용 라이너"];
 var _A_2Depth_T1 = ["평판 트레일러","장폭 트레일러","로베드 트레일러","기타 특수"];
 var _A_2Depth_T2 = ["2.5톤~3.5톤","4.5톤~5톤","8톤~25톤"];
@@ -46,6 +64,7 @@ var _C_4Depth_T5 = ["두께*폭(15*150)","두께*폭(15*75)","두께*폭(15*120)
 
 var _D_Text= ["기타(별도기재부탁드립니다)"];
 var _D_Text2= ["견적요청 바로가기"];
+var _D_Text3= [""];
 
 
 
@@ -527,6 +546,9 @@ function reset(el){
             case "(북양재)ASH" :
                 setSelectBox(_C_3Depth_T2,sel);
             break;
+            case "견적요청 바로가기" :
+                //setSelectBox(_D_Text3,sel);
+            break;
             default :
                 setSelectBox(_B_3Depth_T1,sel);
             break;
@@ -623,7 +645,7 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
             <h2><img src="{{URL::asset('/images/quota/step1.png')}}" alt=""></h2>
         </div>
         <div class="select_wrap">
-        <form action="{{url('step2')}}" method="post" onsubmit="">  
+        <form action="{{url('step2')}}" method="post" onsubmit="return validation()">  
         {{csrf_field()}}
             <h3>상세 제품 선택</h3>
             <div class="select_box_wrap select_box_wrap1">
@@ -660,31 +682,27 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 		                    <li class="ss_1">
 		                        <span class="ss_text text_1">• 차종</span>
 		                        <span class="under_arrow"></span>
-		                        <select name="onedepth"></select>
-                                @if(count($errors) > 0)
-                                    @foreach($errors -> all() as $error)
-                                        {{$error}}
-                                    @endforeach
-                                @endif
-		                    </li>
+		                        <select class="common1" name="onedepth"></select>
+                            </li>
 		                    <li class="ss_2">
 		                        <span class="ss_text text_2">• 상세차종</span>
 		                        <span class="under_arrow"></span>
-		                        <select name="twodepth"></select>
-		                    </li>
+		                        <select class="common2" name="twodepth"></select>
+                            </li>
 		                    <li class="ss_3">
 		                        <span class="ss_text text_3">• 보수부위</span>
 		                        <span class="under_arrow"></span>
-		                        <select name="threedepth"></select>
-		                    </li>
+		                        <select class="common3" name="threedepth"></select>
+                            </li>
 		                    <li class="except">
 		                        <span class="ss_text">• 규격</span>
 		                        <span class="under_arrow"></span>
-		                        <select name="fourdepth"></select>
-		                    </li>
-		                </ul>
+		                        <select class="common4" name="fourdepth" disabled="disabled"></select>
+                            </li>
+                        </ul>
 		            </div>
-		        </div> <!-- select_box -->
+
+                </div> <!-- select_box -->
 		        <div class="add_button add_button1">
 		        	<p>다른 항목의 제품을 추가하시려면 아래 버튼을 눌러주세요</p>
 		        	<a href="#none"></a>

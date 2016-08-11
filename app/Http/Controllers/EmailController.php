@@ -16,6 +16,9 @@ use Jenssegers\Agent\Agent;
 
 use Illuminate\Support\Facades\Validator;
 
+// use Illuminate\Support\Facades\Input;
+
+
 class EmailController extends Controller
 {
     public function getContact()
@@ -59,46 +62,27 @@ class EmailController extends Controller
     public function postStep2(Request $request)
     {
         
-        // $this->validate($request, [
-        //      'name' => 'required',
-        //      'shopname' => 'required',
-        //      'phone' => 'required'
-        // ]);   
+        
 
         // $messages = array(
-        //     'onedepth.required' => '내용을 선택해주세요',
-        //     'twodepth.required' => '내용을 선택해주세요',
-        //     'threedepth.required' => '내용을 선택해주세요',
-        //     'name' => '이름을 써주세요',
-        //      'shopname' => '샵이름을 써주세요',
-        //      'phone' => '핸드폰 번호를 입력해주세요',
-        //      'email' => '이메일을 입력해주세요',
+        //     'main.required' => '1차분류를 선택해주세요',
+        //     'onedepth.required' => '2차분류를 선택해주세요'
+        //     // 'name' => '이름을 써주세요',
+        //     //  'shopname' => '샵이름을 써주세요',
+        //     //  'phone' => '핸드폰 번호를 입력해주세요',
+        //     //  'email' => '이메일을 입력해주세요',
              
         //      );
         // $rules = array(
+        //     'main' => 'required',
         //     'onedepth' => 'required',
-        //     'twodepth' => 'required',
-        //     'threedepth' => 'required',
-        //     'name' => 'required',
-        //      'shopname' => 'required',
-        //      'phone' => 'required',
-        //      'email' => 'required'
-             
-            // 'fourdepth' => 'required',
-            // 'fivedepth' => 'required'
-            // 'name' => 'required',
-            // 'shopname' => 'required',
-            // 'phone' => 'required',
-            // 'email' => 'required',
-            // 'etc' => 'required|max:255'
-            // );
-    //     $validator = Validator::make($request->all(),$rules,$messages);
-
-    //      if ($validator->fails()) {
-    //      return redirect('/step2')
-    //         ->withInput()
-    //         ->withErrors($validator);
-    // }
+        //     'twoepth' => 'required',
+        //     'threedepth' => 'required'
+        //     );
+        // $validator = Validator::make($request->all(),$rules);
+        //  if ($validator->fails()) {
+        //  return redirect('/step1')->withErrors($validator)->withinput();
+        // }
 
          // $validator = Validator::make($request->all(), [
          //    'onedepth' => 'required',
@@ -125,9 +109,9 @@ class EmailController extends Controller
     
     public function postContact(Request $request)
     {
-        // $this->validate($request, [
-        //      'name' => 'required'
-        // ]);   
+       
+        
+        
         $datas1 = $request->except('_token','name','shopname','phone','email','etc');
         $firstdatas = array(
                     '메인' => $request->main,

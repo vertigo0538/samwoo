@@ -80,7 +80,7 @@
 						@endif
 						
 				</aside>
-				<article class="sub_content 11">
+				<article class="sub_content">
 					@yield('sub_content')
 				</article>
 			</div> <!-- content -->
