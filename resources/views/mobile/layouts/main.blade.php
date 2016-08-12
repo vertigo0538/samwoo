@@ -5,3 +5,7 @@
             @yield('content')
         </div>
     @include('mobile.layouts.footer')
+
+    <script type="text/javascript">
+    	$(".nav > ul > li:first-child").addClass("on");
+    </script>

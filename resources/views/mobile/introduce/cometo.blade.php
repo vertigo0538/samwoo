@@ -29,7 +29,7 @@
 		<ul class="cf">
 			<li>
 				<span class="info_type">주소</span>
-				<span class="info_value">인천광역시 중구 영종대로 327번길 12-2,3층(운서동)</span>
+				<span class="info_value">인천광역시 중구 영종대로 327번길 12-2, <br>3층(운서동)</span>
 			</li>
 			<li>
 				<span class="info_type">전화</span>

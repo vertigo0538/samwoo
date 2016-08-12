@@ -157,7 +157,7 @@ class EmailController extends Controller
         Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstfilter'=>$firstfilter,'secondfilter'=>$secondfilter,'thirdfilter'=>$thirdfilter],function($message) use ($mail_content){
             $message->from($mail_content['email']);
             $message->to('khk0613@cside.co.kr');
-            $message->subject($mail_content['shopname']);
+            $message->subject($mail_content['shopname'].'의 견적서 요청');
         });
         Session::flash('success', 'Your Email was Sent!');
         
