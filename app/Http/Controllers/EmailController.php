@@ -109,9 +109,6 @@ class EmailController extends Controller
     
     public function postContact(Request $request)
     {
-       
-        
-        
         $datas1 = $request->except('_token','name','shopname','phone','email','etc');
         $firstdatas = array(
                     '메인' => $request->main,
@@ -121,6 +118,8 @@ class EmailController extends Controller
                     '4분류' => $request->fourdepth,
                     '5분류' => $request->fivedepth
                 );
+
+
         $firstfilter = array_filter($firstdatas); // 빈 배열은 출력되지 않게함
 
         $seconddatas = array(
@@ -152,6 +151,7 @@ class EmailController extends Controller
             //'hidden' => $request->hidden
         );
         //$datas = $request->except('_token');
+
 
 
         Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstfilter'=>$firstfilter,'secondfilter'=>$secondfilter,'thirdfilter'=>$thirdfilter],function($message) use ($mail_content){

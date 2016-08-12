@@ -623,6 +623,7 @@ body{
 	background-color: #ededed;
 	padding-left: 10px;
 	box-sizing: border-box;
+	padding-top: 10px;
 }
 #wrap_main2 .email_info > ul > li{
 	margin-bottom: 10px;

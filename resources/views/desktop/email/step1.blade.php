@@ -118,21 +118,21 @@ $(function(){
                 '                   <img src="{{URL::asset('images/quota/special.png')}}" alt="">'+
                 '                   <p>특장차</p>'+
                 '               </label>'+
-                '               <input id="select4" value="special" type="radio" name="main2">'+
+                '               <input id="select4" value="특장차" type="radio" name="main2">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select5">'+
                 '                   <img src="{{URL::asset('images/quota/common.png')}}" alt="">'+
                 '                   <p>상용트럭</p>'+
                 '               </label>'+
-                '               <input id="select5" value="common" type="radio" name="main2">'+
+                '               <input id="select5" value="상용차" type="radio" name="main2">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select6">'+
                 '                   <img src="{{URL::asset('images/quota/construction.png')}}" alt="">'+
                 '                   <p>건자재</p>'+
                 '               </label>'+
-                '               <input id="select6" value="construction" type="radio" name="main2">'+
+                '               <input id="select6" value="건자재" type="radio" name="main2">'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -193,21 +193,21 @@ $(function(){
                 '                   <img src="{{URL::asset('images/quota/special.png')}}" alt="">'+
                 '                   <p>특장차</p>'+
                 '               </label>'+
-                '               <input id="select7" value="special" type="radio" name="main3">'+
+                '               <input id="select7" value="특장차" type="radio" name="main3">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select8">'+
                 '                   <img src="{{URL::asset('images/quota/common.png')}}" alt="">'+
                 '                   <p>상용트럭</p>'+
                 '               </label>'+
-                '               <input id="select8" value="common" type="radio" name="main3">'+
+                '               <input id="select8" value="상용차" type="radio" name="main3">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select9">'+
                 '                   <img src="{{URL::asset('images/quota/construction.png')}}" alt="">'+
                 '                   <p>건자재</p>'+
                 '               </label>'+
-                '               <input id="select9" value="construction" type="radio" name="main3">'+
+                '               <input id="select9" value="건자재" type="radio" name="main3">'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -293,7 +293,7 @@ function reset(el){
 
         //reset(div);
         switch(val){
-            case "special":
+            case "특장차":
             set1depth(_A_1Depth,sel);
             sel3.parent().show();
             div.find(".except").hide();
@@ -302,7 +302,7 @@ function reset(el){
             div.find(".text_3").text("• 보수부위");
             div.find(".except").hide();
             break;
-            case "common":
+            case "상용차":
             set1depth(_B_1Depth,sel);
             sel3.parent().show();
             div.find(".text_1").text("• 제조사");
@@ -310,7 +310,7 @@ function reset(el){
             div.find(".text_3").text("• 보수부위");
             div.find(".except").hide();
             break;
-            case "construction":
+            case "건자재":
             set1depth(_C_1Depth,sel);
             sel3.parent().show();
             div.find(".except").show();
@@ -666,21 +666,21 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 		                            <img src="{{URL::asset('images/quota/special.png')}}" alt="">
 		                            <p>특장차</p>
 		                        </label>
-		                        <input id="select1" value="special" type="radio" name="main">
+		                        <input id="select1" value="특장차" type="radio" name="main">
 		                    </li>
 		                    <li>
 		                        <label for="select2">
 		                            <img src="{{URL::asset('images/quota/common.png')}}" alt="">
 		                            <p>상용트럭</p>
 		                        </label>
-		                        <input id="select2" value="common" type="radio" name="main">
+		                        <input id="select2" value="상용차" type="radio" name="main">
 		                    </li>
 		                    <li>
 		                        <label for="select3">
 		                            <img src="{{URL::asset('images/quota/construction.png')}}" alt="">
 		                            <p>건자재</p>
 		                        </label>
-		                        <input id="select3" value="construction" type="radio" name="main">
+		                        <input id="select3" value="건자재" type="radio" name="main">
 		                    </li>
 		                </ul>
 		            </div>

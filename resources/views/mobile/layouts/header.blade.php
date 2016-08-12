@@ -1,7 +1,7 @@
 <?php 
 	$url = $_SERVER['REQUEST_URI'];
 	$ex =explode('/' , $url);
-	echo $ex[1];
+	//echo $ex[1];
  ?>
 
 

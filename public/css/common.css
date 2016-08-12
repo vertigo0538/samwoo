@@ -876,6 +876,7 @@ div.sub_header4{
 	background-color: #ededed;
 	padding-left: 10px;
 	box-sizing: border-box;
+	padding-top: 10px;
 }
 .page_content .email_wrap .email_left .email_info ul li span{
 	display: inline-block;
@@ -1006,7 +1007,7 @@ input:-webkit-autofill {
 	width: 52px;
 	position: fixed;
 	bottom: 32%;
-	right: 22%;
+	right: 11%;
 	display: none;
 	z-index: 9999;
 	cursor: pointer;
