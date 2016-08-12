@@ -125,7 +125,7 @@ $(function(){
                 '                   <img src="{{URL::asset('images/quota/common.png')}}" alt="">'+
                 '                   <p>상용트럭</p>'+
                 '               </label>'+
-                '               <input id="select5" value="상용차" type="radio" name="main2">'+
+                '               <input id="select5" value="상용트럭" type="radio" name="main2">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select6">'+
@@ -200,7 +200,7 @@ $(function(){
                 '                   <img src="{{URL::asset('images/quota/common.png')}}" alt="">'+
                 '                   <p>상용트럭</p>'+
                 '               </label>'+
-                '               <input id="select8" value="상용차" type="radio" name="main3">'+
+                '               <input id="select8" value="상용트럭" type="radio" name="main3">'+
                 '           </li>'+
                 '           <li>'+
                 '               <label for="select9">'+
@@ -302,7 +302,7 @@ function reset(el){
             div.find(".text_3").text("• 보수부위");
             div.find(".except").hide();
             break;
-            case "상용차":
+            case "상용트럭":
             set1depth(_B_1Depth,sel);
             sel3.parent().show();
             div.find(".text_1").text("• 제조사");
@@ -673,7 +673,7 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 		                            <img src="{{URL::asset('images/quota/common.png')}}" alt="">
 		                            <p>상용트럭</p>
 		                        </label>
-		                        <input id="select2" value="상용차" type="radio" name="main">
+		                        <input id="select2" value="상용트럭" type="radio" name="main">
 		                    </li>
 		                    <li>
 		                        <label for="select3">
