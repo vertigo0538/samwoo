@@ -1,7 +1,7 @@
 <?php 
 	$url = $_SERVER['REQUEST_URI'];
 	$ex =explode('/' , $url);
-	//echo $ex[1];
+	echo $ex[1];
  ?>
 
 
@@ -74,7 +74,7 @@
 					<h3><a href="/construction/etc">기타</a></h3>
 				</div>
 			</li>
-			<li class="{{$ex[1] == 'step1'? $active = 'on' : $active = ''}}">
+			<li class="{{$ex[1] == 'step1'? $active = 'on' : $active = ''}} {{$ex[1] == 'step2'? $active = 'on' : $active = ''}} {{$ex[1] == 'step3'? $active = 'on' : $active = ''}}">
 				<a href="/step1">
 					<h2>견적요청</h2>
 				</a>

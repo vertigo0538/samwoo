@@ -4,7 +4,7 @@ $(function(){
 	$("#nav_icon").on('click',SidebarClick);
 	
 	//사이드바 서브메뉴 열기
-	var target = $(".nav > ul > li.aru_sub");
+	var target = $(".nav > ul > li");
 	target.on("click",this,SubmenuToggle);	
 	
 	//bxslider

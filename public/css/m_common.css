@@ -71,10 +71,10 @@ body{
 	background-color: #d2232a;
 	color: #fff;
 }
-.header .nav > ul > li.on a{
+/*.header .nav > ul > li.on a{
 	background-color: #d2232a;
 	color: #fff;	
-}
+}*/
 .header .nav > ul > li.on .sub_menu{
 	display: block;
 }
@@ -91,6 +91,7 @@ body{
 .header .nav > ul > li.on h2{
 	background: url(../m_images/main/right_arrow_on.png) 90% center no-repeat;
 	background-size: 13px 13px;	
+	color: #fff;
 }
 .header .nav > ul > li span{
 	display: block;
