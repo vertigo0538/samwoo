@@ -864,6 +864,11 @@ div.sub_header4{
 	width: 440px;
 	text-indent: 10px;
 }
+.page_content .email_wrap .email_left .email_info ul li label{
+	display: block;
+	padding: 10px 0px 0px 52px;
+	color: #d2232a;
+}
 .page_content .email_wrap .email_left .email_info ul li textarea{
 	width: 440px;
 	border: none;

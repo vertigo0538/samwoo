@@ -1,27 +1,34 @@
 @extends('desktop.layouts.page')
 @section('page_content')
 <div>
-    <!-- <div style="width:300px; margin:0 auto;"> -->
-
-    
+ 
 <script>
 function validation(){
    $common1 = $(".select_box_wrap").find(".common1").val();
    $common2 = $(".select_box_wrap").find(".common2").val();
    $common3 = $(".select_box_wrap").find(".common3").val();
    $common4 = $(".select_box_wrap").find(".common4").val();
-   if($common1 == "선택해주세요"){
-    alert("선택해!");
+   $common5 = $(".select_box_wrap2").find(".common1").val();
+   $common6 = $(".select_box_wrap2").find(".common2").val();
+   $common7 = $(".select_box_wrap2").find(".common3").val();
+   $common8 = $(".select_box_wrap2").find(".common4").val();
+   $common9 = $(".select_box_wrap3").find(".common1").val();
+   $common10 = $(".select_box_wrap3").find(".common2").val();
+   $common11 = $(".select_box_wrap3").find(".common3").val();
+   $common12 = $(".select_box_wrap3").find(".common4").val();
+   $input = $(".select_box_wrap").find("input").is(":checked");
+    if( $common1 == "선택해주세요" || $common2 == "선택해주세요" || $common3 == "선택해주세요" || $common4 == "선택해주세요"||
+        $common5 == "선택해주세요" || $common6 == "선택해주세요" || $common7 == "선택해주세요" || $common8 == "선택해주세요"||
+        $common9 == "선택해주세요" || $common10 == "선택해주세요" || $common11 == "선택해주세요" || $common12 == "선택해주세요"
+        ){
+    alert("2차분류를 빈칸없이 선택해주세요");
     return false;     
-   } else if($common2 == "선택해주세요"){
-    alert("선택해!");
+   } else if(!$input){
+    alert("1차분류를 선택해주세요");
     return false;     
-    }// else if($common3 == "선택해주세요"){
-   //  alert("선택해!");
-   //  return false;     
-   // } 
+   }
     return true;
-    
+   //alert($(".select_box_wrap .common1").length);
 }
 var _A_1Depth = ["트레일러","윙바디(WING-CAR)","탑차(TOP_CAR)","덤프/특장차 용 라이너"];
 var _A_2Depth_T1 = ["평판 트레일러","장폭 트레일러","로베드 트레일러","기타 특수"];
@@ -135,22 +142,22 @@ $(function(){
                 '           <li class="ss_1">'+
                 '               <span class="ss_text text_1">• 차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="onedepth2"></select>'+
+                '               <select class="common1" name="onedepth2"></select>'+
                 '           </li>'+
                 '           <li class="ss_2">'+
                 '               <span class="ss_text text_2">• 상세차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="twodepth2"></select>'+
+                '               <select class="common2" name="twodepth2"></select>'+
                 '           </li>'+
                 '           <li class="ss_3">'+
                 '               <span class="ss_text text_3">• 보수부위</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="threedepth2"></select>'+
+                '               <select class="common3" name="threedepth2"></select>'+
                 '           </li>'+
                 '           <li class="except">'+
                 '               <span class="ss_text">• 규격</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="fourdepth2"></select>'+
+                '               <select class="common4" name="fourdepth2"></select>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -210,22 +217,22 @@ $(function(){
                 '           <li class="ss_1">'+
                 '               <span class="ss_text text_1">• 차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="onedepth3"></select>'+
+                '               <select class="common1" name="onedepth3"></select>'+
                 '           </li>'+
                 '           <li class="ss_2">'+
                 '               <span class="ss_text text_2">• 상세차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="twodepth3"></select>'+
+                '               <select class="common2" name="twodepth3"></select>'+
                 '           </li>'+
                 '           <li class="ss_3">'+
                 '               <span class="ss_text text_3">• 보수부위</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="threedepth3"></select>'+
+                '               <select class="common3" name="threedepth3"></select>'+
                 '           </li>'+
                 '           <li class="except">'+
                 '               <span class="ss_text">• 규격</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="fourdepth3"></select>'+
+                '               <select class="common4" name="fourdepth3"></select>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -519,7 +526,8 @@ function reset(el){
                 //setSelectBox(_D_Text,sel);
             break;
             case "(남양재)IPE(이페)" :
-                //setSelectBox(_D_Text,sel);
+                sel.parent().hide();
+                sel2.parent().hide();
             break;
             case "(북양재)탄화목(참나무外)" :
                 sel.parent().hide();
@@ -697,7 +705,7 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 		                    <li class="except">
 		                        <span class="ss_text">• 규격</span>
 		                        <span class="under_arrow"></span>
-		                        <select class="common4" name="fourdepth" disabled="disabled"></select>
+		                        <select class="common4" name="fourdepth"></select>
                             </li>
                         </ul>
 		            </div>
@@ -714,17 +722,4 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
     </div>				
 </form>
 </div>
-  
-
-
-
-        
-        
-        
-
-        
-        
-        
-        
-    
 @endsection

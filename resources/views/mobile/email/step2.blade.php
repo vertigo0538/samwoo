@@ -4,6 +4,10 @@
     .go_top{
         display: none;
     }
+    .email_box{
+		min-height: 500px;
+		/*border: 1px solid red;*/
+	}
 </style>
 	<div class="bread_crumbs">
 		<h2 style="background-image:none;">견적요청</h2>
@@ -13,7 +17,7 @@
 	</div>
 	<div class="email_wrap cf">
 		<div class="email_left">
-			<form action="{{url('send')}}" method="post">
+			<form id="email_form" action="{{url('send')}}" method="post">
 				{{csrf_field()}}
 				<h3>의뢰자 정보입력</h3>
 				<div class="email_box">
@@ -22,7 +26,7 @@
 						<ul>
 							<li>
 								<span>성함</span>
-								<input type="text" name="name">	
+								<input type="text" name="name"> 	
 							</li>
 							<li>
 								<span>상호명</span>
@@ -68,22 +72,43 @@
 		</form>
 		
 	</div> <!-- email_wrap -->
-	
+	<script type="text/javascript">
+		$(function(){
+			$("#email_form").validate({
+				rules:{
+					name : {
+						required:true
+					},
+					shopname : {
+						required:true
+					},
+					phone :{
+						required:true	
+					},
+					email :{
+						required:true,
+						email:true
+					}
+				}, //rules
+				messages:{
+					name :{
+						required:"성함을 입력해주세요"
+					},
+					shopname:{
+						required:"상호명을 입력해주세요"	
+					},
+					phone:{
+						required:"연락처를 입력해주세요"		
+					},
+					email:{
+						required:"이메일을 입력해주세요",		
+						email:"정확한 이메일 주소를 입력해주세요"	
+					}
+				}
+			});
+		});
 
+	</script>
 
-
-
-
-
-
-
-
-<style>
-	.email_box{
-		min-height: 500px;
-		/*border: 1px solid red;*/
-	}
-</style>
-	
 @endsection
 

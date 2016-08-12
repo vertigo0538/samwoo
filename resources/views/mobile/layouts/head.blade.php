@@ -14,12 +14,16 @@
     <title>삼우특장 플러스</title>
     <link rel="stylesheet" href="{{ URL::asset('css/m_common.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/base.css') }}">
+    <!-- <link rel="stylesheet" href="{{ URL::asset('css/jquery.mobile-1.4.5.min.css') }}"> -->
     <link rel="stylesheet" href="{{ URL::asset('css/jquery.bxslider.css') }}"/>
+
     <!-- jquery -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="{{ URL::asset('js/jquery-1.10.2.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/m_main.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/iscroll.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/jquery.validate.js') }}"></script>
+    <!-- <script type="text/javascript" src="{{ URL::asset('js/jquery.mobile-1.4.5.min.js') }}"></script> -->
     <!-- jquery -->
     <!-- bxslider -->
     <script type="text/javascript" src="{{ URL::asset('js/jquery.bxslider.min.js') }}"></script>

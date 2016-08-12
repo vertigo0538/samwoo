@@ -6,47 +6,88 @@
     }
 </style>
 <script>
-var _A_1Depth = ["트레일러","윙바디(WING-CAR)","탑차(TOP_CAR)","덤프/특장차 용 라이너"];
-var _A_2Depth_T1 = ["평판 트레일러","장폭 트레일러","로베드 트레일러","기타 특수"];
-var _A_2Depth_T2 = ["2.5톤~3.5톤","4.5톤~5톤","8톤~25톤"];
-var _A_2Depth_T3 = ["1톤~1.5톤","2.5톤~3.5톤","4.5톤~5톤","8톤~25톤"];
-var _A_2Depth_T4 = ["탑차용","덤프용"];
-var _A_3Depth_T1 = ["바닥 보수","기타 보수"];
+
+function validation(){
+   $common1 = $(".select_box_wrap").find(".common1").val();
+   $common2 = $(".select_box_wrap").find(".common2").val();
+   $common3 = $(".select_box_wrap").find(".common3").val();
+   $common4 = $(".select_box_wrap").find(".common4").val();
+   $common5 = $(".select_box_wrap2").find(".common5").val();
+   $common6 = $(".select_box_wrap2").find(".common6").val();
+   $common7 = $(".select_box_wrap2").find(".common7").val();
+   $common8 = $(".select_box_wrap2").find(".common8").val();
+   $common9 = $(".select_box_wrap3").find(".common9").val();
+   $common10 = $(".select_box_wrap3").find(".common10").val();
+   $common11 = $(".select_box_wrap3").find(".common11").val();
+   $common12 = $(".select_box_wrap3").find(".common12").val();
+   $input = $(".select_box_wrap").find("input").is(":checked");
+    if( $common1 == "차종을 선택해주세요" || $common1 == "제조사를 선택해주세요" || $common1 == "용도를 선택해주세요" || 
+        $common5 == "차종을 선택해주세요" || $common5 == "제조사를 선택해주세요" || $common5 == "용도를 선택해주세요" || 
+        $common9 == "차종을 선택해주세요" || $common9 == "제조사를 선택해주세요" || $common9 == "용도를 선택해주세요" || 
+        $common2 == "차종을 선택해주세요" || $common2 == "수종을 선택해주세요" || 
+        $common6 == "차종을 선택해주세요" || $common6 == "차종을 선택해주세요" || 
+        $common10 == "차종을 선택해주세요" || $common10 == "차종을 선택해주세요" || 
+        $common3 == "보수부위를 선택해주세요" || $common3 == "제품타입을 선택해주세요" ||
+        $common7 == "보수부위를 선택해주세요" || $common7 == "규격을 선택해주세요" ||
+        $common11 == "보수부위를 선택해주세요" || $common11 == "규격을 선택해주세요" ||
+        $common4 == "규격을 선택해주세요" || $common8 == "규격을 선택해주세요" || $common12 == "규격을 선택해주세요"
+        ){
+    alert("2차분류를 빈칸없이 선택해주세요");
+    return false;     
+   } else if(!$input){
+    alert("1차분류를 선택해주세요");
+    return false;     
+   }
+    return true;
+   //alert($(".select_box_wrap .common1").length);
+}
+ 
+
+var _A_1Depth = ["차종을 선택해주세요","트레일러","윙바디(WING-CAR)","탑차(TOP_CAR)","덤프/특장차 용 라이너"];
+var _A_2Depth_T1 = ["차종을 선택해주세요","평판 트레일러","장폭 트레일러","로베드 트레일러","기타 특수"];
+var _A_2Depth_T2 = ["차종을 선택해주세요","2.5톤~3.5톤","4.5톤~5톤","8톤~25톤"];
+var _A_2Depth_T3 = ["차종을 선택해주세요","1톤~1.5톤","2.5톤~3.5톤","4.5톤~5톤","8톤~25톤"];
+var _A_2Depth_T4 = ["차종을 선택해주세요","탑차용","덤프용"];
+var _A_3Depth_T1 = ["보수부위를 선택해주세요","바닥 보수","기타 보수"];
 
 
 
-var _B_1Depth = ["현대","대우","기타(해외제조사)"];
-var _B_2Depth_T1 = ["(소형)2.5톤","(소형)3.5톤",
+var _B_1Depth = ["제조사를 선택해주세요","현대","대우","기타(해외제조사)"];
+var _B_2Depth_T1 = ["차종을 선택해주세요",
+                    "(소형)2.5톤","(소형)3.5톤",
                     "(중형)4.5톤 단축","(중형)4.5톤 장축","(중형)4.5톤 초장축","(중형)5톤 단축","(중형)5톤 장축","(중형)5톤 초장축",
                     "(중형)5톤 초장축 플러스","(중형)5톤 와이드 7.6","(중형)5톤 와이드 8.3",
                     "(대형)8톤 장축","(대형)8톤 초장축","(대형)9.5톤 장축","(대형)9.5톤 초장축","(대형)9.5톤 극장축","(대형)11톤 - 25톤"
                     ];
-var _B_2Depth_T2 = ["(중형)4.5톤","(중형)5톤",
+var _B_2Depth_T2 = ["차종을 선택해주세요",
+                    "(중형)4.5톤","(중형)5톤",
                     "(대형)8톤 장축","(대형)8톤 초장축","(대형)9.5톤 장축","(대형)9.5톤 초장축","(대형)9.5톤 극장축","(대형)11톤 - 25톤",
                     ];
-var _B_3Depth_T1 = ["C/B(갈비대)","F/B(바닥재)","G/B(문짝)","L/N(라이너)"];
-var _B_3Depth_T2 = ["C/B(갈비대)","L/N(라이너)"];
+var _B_3Depth_T1 = ["보수부위를 선택해주세요","C/B(갈비대)","F/B(바닥재)","G/B(문짝)","L/N(라이너)"];
+var _B_3Depth_T2 = ["보수부위를 선택해주세요","C/B(갈비대)","L/N(라이너)"];
 
 
 
-var _C_1Depth = ["야외 데크재","후로링(건축&체육관 外)"];
-var _C_2Depth_T1 = ["(남양재)APITONG(아피통)","(남양재)MLH(하드우드)","(남양재)TALI(탈리)","(남양재)IPE(이페)","(북양재)탄화목(참나무外)"];
-var _C_2Depth_T2 = ["(남양재)APITONG(아피통)","(남양재)MERPAU(멀파우)","(남양재)MLH(하드우드)","(남양재)ACACIA(아카시아)","(남양재)MERBAU(멀바우)",
+var _C_1Depth = ["용도를 선택해주세요","야외 데크재","후로링(건축&체육관 外)"];
+var _C_2Depth_T1 = ["수종을 선택해주세요","(남양재)APITONG(아피통)","(남양재)MLH(하드우드)","(남양재)TALI(탈리)","(남양재)IPE(이페)","(북양재)탄화목(참나무外)"];
+var _C_2Depth_T2 = ["수종을 선택해주세요","(남양재)APITONG(아피통)","(남양재)MERPAU(멀파우)","(남양재)MLH(하드우드)","(남양재)ACACIA(아카시아)","(남양재)MERBAU(멀바우)",
                     "(북양재)MAPLE(단풍나무)","(북양재)OAK(참나무)","(북양재)BEECH(너도밤나무)","(북양재)ASH"
                     ];
 
-var _C_3Depth_T1 = ["SOLID(솔리드)"];
-var _C_3Depth_T2 = ["SOLID(솔리드 코팅사양)"];
+var _C_3Depth_T1 = ["제품타입을 선택해주세요","SOLID(솔리드)"];
+var _C_3Depth_T2 = ["제품타입을 선택해주세요","SOLID(솔리드 코팅사양)"];
 
-var _C_4Depth_T1 = ["두께*폭(19*80)"];
-var _C_4Depth_T2 = ["두께*폭(15*75)","두께*폭(18*75)","두께*폭(24*60)"];
-var _C_4Depth_T3 = ["두께*폭(17*90)","기타(별도기재부탁드립니다)"];
-var _C_4Depth_T4 = ["두께*폭(15*150)","기타(별도기재부탁드립니다)"];
-var _C_4Depth_T5 = ["두께*폭(15*150)","두께*폭(15*75)","두께*폭(15*120)","두께*폭(15*150)","기타(별도기재부탁드립니다)"];
+var _C_4Depth_T1 = ["규격을 선택해주세요","두께*폭(19*80)"];
+var _C_4Depth_T2 = ["규격을 선택해주세요","두께*폭(15*75)","두께*폭(18*75)","두께*폭(24*60)"];
+var _C_4Depth_T3 = ["규격을 선택해주세요","두께*폭(17*90)","기타(별도기재부탁드립니다)"];
+var _C_4Depth_T4 = ["규격을 선택해주세요","두께*폭(15*150)","기타(별도기재부탁드립니다)"];
+var _C_4Depth_T5 = ["규격을 선택해주세요","두께*폭(15*150)","두께*폭(15*75)","두께*폭(15*120)","두께*폭(15*150)","기타(별도기재부탁드립니다)"];
 
 
-var _D_Text= ["기타(별도기재부탁드립니다)"];
+var _D_Text= ["제품타입을 선택해주세요","기타(별도기재부탁드립니다)"];
+var _D_Text1= ["규격을 선택해주세요","기타(별도기재부탁드립니다)"];
 var _D_Text2= ["견적요청 바로가기"];
+var _D_Text3= [""];
 
 
 
@@ -55,6 +96,16 @@ var _D_Text2= ["견적요청 바로가기"];
 // $_A_1Depth = array("트레일러","윙바디(WING-CAR)","탑차(TOP_CAR)","덤프/특장차 용 라이너");
 
 $(function(){
+    
+
+     $(".click").click(function(){
+    $common1 = $(".select_box_wrap").find(".common1").val();
+    $common11 = $common1.split(' ');
+    var $c2 = $(".select_box_wrap").find(".common2").val();
+    var $cs2 = $c2.split(' ');
+     alert($cs2[1]);
+ });
+
     $(".add_button1").on("click",function(){
     	_cc();
     	$(this).hide();
@@ -116,19 +167,19 @@ $(function(){
                 '       <ul>'+
                 '           <li class="ss_1">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="onedepth2"></select>'+
+                '               <select class="common5" name="onedepth2"></select>'+
                 '           </li>'+
                 '           <li class="ss_2">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="twodepth2"></select>'+
+                '               <select class="common6" name="twodepth2"></select>'+
                 '           </li>'+
                 '           <li class="ss_3">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="threedepth2"></select>'+
+                '               <select class="common7" name="threedepth2"></select>'+
                 '           </li>'+
                 '           <li class="except">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="fourdepth2"></select>'+
+                '               <select class="common8" name="fourdepth2"></select>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -187,19 +238,19 @@ $(function(){
                 '       <ul>'+
                 '           <li class="ss_1">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="onedepth3"></select>'+
+                '               <select class="common9" name="onedepth3"></select>'+
                 '           </li>'+
                 '           <li class="ss_2">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="twodepth3"></select>'+
+                '               <select class="common10" name="twodepth3"></select>'+
                 '           </li>'+
                 '           <li class="ss_3">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="threedepth3"></select>'+
+                '               <select class="common11" name="threedepth3"></select>'+
                 '           </li>'+
                 '           <li class="except">'+
                 '               <span class="under_arrow"></span>'+
-                '               <select name="fourdepth3"></select>'+
+                '               <select class="common12" name="fourdepth3"></select>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -294,7 +345,7 @@ function reset(el){
         }
     });
     function set1depth(arr,sel){
-        op1.push("<option>"+"선택해주세요"+"</option>");
+        //op1.push("<option>"+"선택해주세요"+"</option>");
         for (var i = 0, len = arr.length; i < len; i++) {
             op1.push("<option value=\""+arr[i]+"\">"+arr[i]+"</option>");
         }
@@ -363,7 +414,7 @@ function reset(el){
     });
     
     function setSelectBox(arr,sel){
-        op1.push("<option>"+"선택해주세요"+"</option>");
+        //op1.push("<option>"+"선택해주세요"+"</option>");
         for (var i=0, len=arr.length; i < len; i++) {
             op1.push("<option value=\""+arr[i]+"\">"+arr[i]+"</option>");
         }
@@ -494,7 +545,8 @@ function reset(el){
                 //setSelectBox(_D_Text,sel);
             break;
             case "(남양재)IPE(이페)" :
-                //setSelectBox(_D_Text,sel);
+                sel.parent().hide();
+                sel2.parent().hide();
             break;
             case "(북양재)탄화목(참나무外)" :
                 sel.parent().hide();
@@ -520,6 +572,9 @@ function reset(el){
             break;
             case "(북양재)ASH" :
                 setSelectBox(_C_3Depth_T2,sel);
+            break;
+            case "견적요청 바로가기" :
+                //setSelectBox(_D_Text3,sel);
             break;
             default :
                 setSelectBox(_B_3Depth_T1,sel);
@@ -616,7 +671,7 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 				<h3><img src="{{URL::asset('/m_images/quota/step1.png')}}" alt="" width="100%"></h3>
 			</div>
 			<div class="select_wrap">
-				<form action="{{url('step2')}}" method="post" onsubmit="">  
+				<form action="{{url('step2')}}" method="post" onsubmit="return validation()">  
 				{{csrf_field()}}
 				<div class="select_box_wrap select_box_wrap1">
 				<h3>상세 제품 선택</h3>
@@ -653,22 +708,22 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 							<li class="ss_1">
 								<!-- <span class="ss_text text_1">• 차종</span> -->
 								<span class="under_arrow"></span>
-								<select name="onedepth"></select>
+								<select class="common1" name="onedepth"></select>
 							</li>
 							<li class="ss_2">
 								<!-- <span class="ss_text text_2">• 상세차종</span> -->
 								<span class="under_arrow"></span>
-								<select name="twodepth"></select>
+								<select class="common2" name="twodepth"></select>
 							</li>
 							<li class="ss_3">
 								<!-- <span class="ss_text text_3">• 보수부위</span> -->
 								<span class="under_arrow"></span>
-								<select name="threedepth"></select>
+								<select class="common3" name="threedepth"></select>
 							</li>
 							<li class="except">
 								<!-- <span class="ss_text">• 규격</span> -->
 								<span class="under_arrow"></span>
-								<select name="fourdepth"></select>
+								<select class="common4" name="fourdepth"></select>
 							</li>
 						</ul>
 					</div> <!-- select_second -->
@@ -684,7 +739,4 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
     	</div>				
 		</form>
 		</div> <!-- quota -->
-
-	
-
 @endsection
