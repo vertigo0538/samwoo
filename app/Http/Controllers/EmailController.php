@@ -120,7 +120,7 @@ class EmailController extends Controller
                 );
 
 
-        $firstfilter = array_filter($firstdatas); // 빈 배열은 출력되지 않게함
+        //$firstfilter = array_filter($firstdatas); // 빈 배열은 출력되지 않게함
 
         $seconddatas = array(
                     '메인' => $request->main2,
@@ -130,7 +130,7 @@ class EmailController extends Controller
                     '4분류' => $request->fourdepth2,
                     '5분류' => $request->fivedepth2
                 );
-        $secondfilter = array_filter($seconddatas);
+        //$secondfilter = array_filter($seconddatas);
 
         $thirddatas = array(
                     '메인' => $request->main3,
@@ -140,7 +140,7 @@ class EmailController extends Controller
                     '4분류' => $request->fourdepth3,
                     '5분류' => $request->fivedepth3
                 );
-        $thirdfilter = array_filter($thirddatas);
+        //$thirdfilter = array_filter($thirddatas);
 
         $mail_content = array(
             'name' => $request->name,
@@ -154,7 +154,7 @@ class EmailController extends Controller
 
 
 
-        Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstfilter'=>$firstfilter,'secondfilter'=>$secondfilter,'thirdfilter'=>$thirdfilter],function($message) use ($mail_content){
+        Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstdatas'=>$firstdatas,'seconddatas'=>$seconddatas,'thirddatas'=>$thirddatas],function($message) use ($mail_content){
             $message->from($mail_content['email']);
             $message->to('khk0613@cside.co.kr');
             $message->subject($mail_content['shopname'].'의 견적서 요청');

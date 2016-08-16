@@ -139,7 +139,10 @@
 				}
 			});
 		});
-		$("input[name='main']").parent().append("<span class='email_number'>호호</span>");
+		// 최종제품 내역확인에 숫자 부여
+		$("input[name='main']").parent().append("<span class='email_number'>01.</span>");
+		$("input[name='main2']").parent().append("<span class='email_number'>02.</span>");
+		$("input[name='main3']").parent().append("<span class='email_number'>03.</span>");
 	</script>
 
 

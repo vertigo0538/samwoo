@@ -950,7 +950,19 @@ div.sub_header4{
 	overflow: hidden;
 	position: relative;
 }
+.page_content .email_wrap .email_right > div > div{
+	position: relative;
+}
 
+.page_content .email_wrap .email_right > div .email_number{
+	position: absolute;
+	top: 50%;
+	left:20px;
+	margin-top: -8px;
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 13px;
+}
 .page_content .email_wrap .email_right input{
 	font-size: 13px;
 	padding: 20px 0;
@@ -964,7 +976,7 @@ div.sub_header4{
 	border:none;
 	font-weight: bold;
 	background-color: #ededed;
-	padding-left: 20px;
+	padding-left: 42px;
 }
 .page_content .email_wrap .email_right input[name="main2"],
 .page_content .email_wrap .email_right input[name="main3"]{
