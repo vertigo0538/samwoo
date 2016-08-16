@@ -16,7 +16,7 @@
 			<p><img src="{{URL::asset('images/common/cb_2-2.png')}}" alt=""></p>
 			<span>아피통(갈비대용)</span>
 		</div>
-		<div class="mgr">
+		<div class="mgr full">
 			<p><img src="{{URL::asset('images/common/cb_2-3.png')}}" alt=""></p>
 			<span>아피통(갈비대용)</span>
 		</div>

@@ -8,21 +8,42 @@ $(function(){
 	});
 
 	$(".dropdown").mouseenter(function(){
-		$(this).find($(".sub_header")).stop().fadeIn(600);
-		
+		$(this).find($(".sub_header")).stop().fadeIn(800);
+		$("#header_wrapm,.main_header_wrap").addClass("down");
 	});
 	$(".dropdown").mouseleave(function(){
 		$(this).find($(".sub_header")).hide();
+
+	});
+	
+	// $(".nav").mouseenter(function(){
+	// 	$("#header_wrapm,.main_header_wrap").addClass("down");
+	// });
+	 $(".nav").mouseleave(function(){
+		$("#header_wrap,.main_header_wrap").removeClass("down");
+	 });
+	 $(".nav > ul > li:last-child").mouseenter(function(){
+		$("#header_wrap,.main_header_wrap").removeClass("down");
 	});
 	// $(".dropdown2").mouseenter(function(){
 	// 	$(".dropdown_wrap").stop().slideUp();
 
 	// });
 	$(".dropdown").mouseenter(function(){
+		$("#wrap_main2 .page_content").addClass("zindex");
+		$(".layer").show();
 		$(".dropdown_wrap").stop().slideDown(300);
+		//$("#header_wrapm,.main_header_wrap").addClass("down");
+		
+		// if ($(".dropdown_wrap").is(":visible")) {
+		// alert("hi");
+	//}
 	});
 	$(".dropdown").mouseleave(function(){
-		$(".dropdown_wrap").stop().slideUp();
+		$("#wrap_main2 .page_content").removeClass("zindex");
+		$(".layer").hide();
+		$(".dropdown_wrap").stop().slideUp(300);
+		//$("#header_wrap,.main_header_wrap").removeClass("down");
 	});
 	
 	
@@ -52,9 +73,25 @@ $(function(){
 	$(".go_top").click(function(){
   		$("html,body").animate({scrollTop:0},400);
   	});
+	$(".go_top").hover(function(){
+		$(this).addClass("add_top");	
+	},function(){
+		$(this).removeClass("add_top");	
+	});
 
+	//개인정보보호정책 팝업
 
+	$(".policy label").click(function(){
+		$(this).toggleClass("view");
+		if($(this).hasClass("view")){
+			$(".policy_popup").bPopup();	
+		}
+		
+	});
 
+	// $(".map1").click(function(){
+	// 	alert("hi");
+	// });
 }); //jquery end
 	
 

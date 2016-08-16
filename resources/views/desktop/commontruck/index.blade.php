@@ -4,7 +4,7 @@
 			<h2>상용트럭</h2>
 			<div class="sidebar_border">
 				<div class="down_hover">
-					<div class="menu down_arrow">
+					<div class="menu down_arrow {{$title == 'sangall'? $active = 'active' : $active = ''}}">
 						<a class="{{$title == 'sangall'? $active = 'active' : $active = ''}}" href="{{url($title2.'/sangall/sangall_0')}}">{{$title1[0]}}</a>
 					</div>
 					<div class="aru_sub">
@@ -16,7 +16,7 @@
 					</div>
 				</div>
 				<div class="down_hover">
-					<div class="menu down_arrow">
+					<div class="menu down_arrow {{$title == 'sangbosu'? $active = 'active' : $active = ''}}">
 						<a class="{{$title == 'sangbosu'? $active = 'active' : $active = ''}}" href="{{url($title2.'/sangbosu/sangbosu_0')}}">{{$title1[1]}}</a>
 					</div>
 					<div class="aru_sub">

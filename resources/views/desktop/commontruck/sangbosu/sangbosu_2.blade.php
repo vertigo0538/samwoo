@@ -6,9 +6,9 @@
 		   <br>* 소형트럭 : 특수합판 구성
 		   <br>* 대형트럭 : 목재타입 GATE BOARD 구성
 		</p>
-		<img src="{{URL::asset('images/common/gb_1.jpg')}}" alt="C/B 시공">
+		<img class="mb10" src="{{URL::asset('images/common/gb_1.jpg')}}" alt="C/B 시공">
 		<p class="img_description">특수합판 타입</p>
-		<img src="{{URL::asset('images/common/gb_2.jpg')}}" alt="C/B 시공">
+		<img class="mb10" src="{{URL::asset('images/common/gb_2.jpg')}}" alt="C/B 시공">
 		<p class="img_description">목재타입</p>
 	</section>
 	<section class="cf">

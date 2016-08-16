@@ -2,7 +2,7 @@
 
 #wrap_main{
 	width: 960px;
-	margin: 300px auto 0;
+	margin: 100px auto 0;
 	padding-bottom: 100px;
 	/*border: 1px solid red;	*/
 }
@@ -12,14 +12,20 @@
 	/*min-height: 100%;*/
 	background: url(../images/main/main_bg.jpg) no-repeat;
 	background-size: cover;
+	/*min-height: 1250px;*/
 }
 /*네비게이션*/
 #header_wrap{
 	width: 100%;
+	transition: all 0.3s ease-in;
+	position: relative;
+	z-index: 1100;
 }
 .main_header_wrap{
 	height: 81px;
 	border-bottom: 1px solid #727e84;
+	position: relative;
+	z-index: 1100;
 }
 /*.main_header_wrap.on{
 	background-color: #fff;
@@ -78,13 +84,11 @@
 	position: absolute;
 	top: 80px;
 	width: 100%;
-	height: 230px;
+	height: 240px;
 	display: none;
-
-	/*margin-left: -960px;*/
-	/*width: 1920px;*/
 	background-color: #fff;
-	z-index: 9998;
+	/*z-index: 9998;*/
+	box-shadow: inset 0px 5px 10px -5px;
 }
 .sub_header{
 	width: 960px;
@@ -130,6 +134,9 @@ div.sub_header4{
 	padding: 15px 0px 10px 38px;
 	border-left: 1px solid #e5e5e5;
 }
+.sub_header .second_depth a{
+	display: block;
+}
  .sub_header .second_depth > ul > li{
 	display: table;
 	float: left;
@@ -162,7 +169,14 @@ div.sub_header4{
 	padding-bottom: 10px;
 	cursor: pointer;
 }
-
+.sub_header .second_depth h3.except_right{
+	background: url(../images/main/li_arrow.png) right 2px no-repeat;
+	background-size: 15px 15px;
+}
+.sub_header .second_depth > section:hover h3.except_right{
+	background: url(../images/main/li_arrow_hover.png) right 2px no-repeat;
+	background-size: 15px 15px;	
+}
 .sub_header .second_depth > section:hover h3{
 	color: #e51d2e;	
 	border-bottom: 1px solid #e51d2e;
@@ -244,6 +258,14 @@ div.sub_header4{
 	width: 389px;
 	height: 100%;
 }
+#wrap_main .main_right a{
+	display: block;
+	color: #fff;
+	height: 100%;
+}
+#wrap_main .main_right .service a{
+	color: #4d4d4d;
+}
 #wrap_main .main_right section{
 	/*border: 1px solid red;*/
 }
@@ -251,12 +273,20 @@ div.sub_header4{
 	font-size: 18px;
 	font-weight: 900;
 	padding: 16px 0 16px 20px;
-	background: url(../images/main/li_arrow.png) right center no-repeat;
+	background: url(../images/main/li_right.png) right 10px center no-repeat;
 	background-size: 15px 15px;
 	box-sizing: border-box;
 }
+#wrap_main .main_right .service h2{
+	background: url(../images/main/li_arrow.png) right 10px center no-repeat;
+	background-size: 15px 15px;
+}
 #wrap_main .main_right h2:hover{
-	background: url(../images/main/li_arrow_hover.png) right center no-repeat;
+	background: url(../images/main/li_right_hover.png) right 10px center no-repeat;
+	background-size: 15px 15px;
+}
+#wrap_main .main_right .service h2:hover{
+	background: url(../images/main/li_arrow_hover.png) right 10px center no-repeat;
 	background-size: 15px 15px;
 }
 #wrap_main .main_right .service{
@@ -266,7 +296,6 @@ div.sub_header4{
 }
 #wrap_main .main_right .service h2{
 	color: #e51d2e;
-	margin-right: 10px;
 }
 #wrap_main .main_right .service p{
 	border-top: 1px solid #e5e5e5;
@@ -305,9 +334,6 @@ div.sub_header4{
 	background: url(../images/main/quota_bg.png) no-repeat;
 	background-size: 190px 180px;
 }
-#wrap_main .main_right .quota h2{
-	margin-right: 10px;
-}
 /*메인컨텐츠끝*/
 
 /*푸터*/
@@ -318,6 +344,7 @@ div.sub_header4{
 	width: 940px;
 	margin: 0 auto;
 	padding: 20px 0;
+	position: relative;
 }
 #footer span{
 	display: inline-block;
@@ -361,7 +388,7 @@ div.sub_header4{
 	/*margin-top: -73px;*/
 	background-color: #fff;
 	overflow-y: hidden;
-	z-index: 9910;
+	z-index: 1200;
 	/*padding-bottom: 100px;*/
 	/*position: absolute;*/
 	top: -73px;
@@ -373,6 +400,10 @@ div.sub_header4{
 	top: 0px;
 	left: 50%;
 	margin-left: -480px;*/
+}
+#wrap_main2 .page_content.zindex,
+#wrap_main3 .page_content.zindex{
+	z-index: 1000;
 }
 #wrap_main3 .page_content{
 	min-height: 1200px;
@@ -418,7 +449,7 @@ div.sub_header4{
 	/*display: none;*/
 }
 #sidebar .menu:hover > a{
-	color: #d2232a;
+	color: #e51d2e;
 	font-weight: bold;
 }
 #sidebar .down_hover:hover div > a{
@@ -430,6 +461,7 @@ div.sub_header4{
 	background-size: 15px 15px;
 }
 #sidebar .aru_sub{
+	background-color: #fbfbfb;
 }
 #sidebar .aru_sub > ul{
 	padding: 25px 0 25px 25px;
@@ -457,7 +489,7 @@ div.sub_header4{
 	border-bottom: 1px solid #dcdcdc;
 }
 #sidebar .go_quota{
-	width: 178px;
+	/*width: 178px;*/
 	height: 60px;
 	background:#fbfbfb url(../images/main/go_quota.png) 15px center no-repeat;
 }
@@ -468,12 +500,17 @@ div.sub_header4{
 }
 /*서브페이지 사이드바 끝*/
 .active{
-	color:#d2232a !important;
-	background: url(../images/main/li_down_hover.png) 175px center no-repeat;
-	background-size: 15px 15px;
+	background: url(../images/main/li_down_hover.png) 175px center no-repeat !important;
+	background-size: 15px 15px !important;
+}
+.active a{
+	color:#e51d2e !important;
 }
 .active2{
-	color:#d2232a !important;
+	color:#e51d2e !important;
+}
+.active2 a{
+	color:#e51d2e !important;
 }
 #tab{
 	margin-top:25px;
@@ -526,26 +563,32 @@ div.sub_header4{
 	color: #3e3e3e;
 }
 .content .sub_content{
-	padding-bottom: 500px;
+	padding-bottom: 150px;
+}
+.content .sub_content .description{
+	width: 680px;
+}
+.content .sub_content .description img{
+	width: 100%;
 }
 .content .sub_content .description p{
 	font-size: 13px;
-	line-height: 21px;
+	line-height: 23px;
 	color: #333333;
 	margin-bottom: 20px;
 	padding-left: 25px;
 	/*letter-spacing: 0.04em;*/
 }
 .content .sub_content .description p.img_description{
-	border: 1px solid #dcdcdc;
+	/*border: 1px solid #dcdcdc;*/
 	text-align: center;
 	background: #ededed;
-	padding: 17px 0;
+	padding: 12px 0;
 	box-sizing: border-box;
 }
-.content .sub_content .description img{
+/*.content .sub_content .description img{
 	margin-bottom:10px;
-}
+}*/
 .content .sub_content section:first-child h3{
 	margin-top: 25px;
 }
@@ -562,19 +605,22 @@ div.sub_header4{
 .content .sub_content section:last-child p{
 	border: 1px solid #e2e2e2;
 	width: 330px;
-	height: 200px;
+	height: 203px;
 	box-sizing: border-box;
 	text-align: center;
 	line-height: 200px;
 }
+.content .sub_content section:last-child .full img{
+	width: 100%;
+	height: 100%;
+}
 .content .sub_content section:last-child span{
 	display: inline-block;
 	padding: 15px 0;
-
 }
 .content .sub_content section.triple p{
 	width: 218px;
-	height: 183px;
+	height: 187px;
 	line-height: 183px;
 }
 .content .sub_content h3{
@@ -630,9 +676,13 @@ div.sub_header4{
 	background: #ededed;
 	padding: 20px 0;
 }
+.page_content .email_wrap .email_box{
+	border: 1px solid #ededed;	
+}
 .page_content .email_wrap .email_box p{
 	text-align: left;
 	padding-left: 35px;
+	border-top: 3px solid #848383;
 }
 .page_content .select_wrap .select_box .select_first{
 	/*border-right: 1px solid #dcdcdc;*/
@@ -647,6 +697,11 @@ div.sub_header4{
 	position: absolute;
 	visibility: hidden;
 }
+/*.page_content .select_wrap .select_box .select_first input,
+#policy{
+	position: absolute;
+	visibility: hidden;
+}*/
 .page_content .select_wrap .select_box .select_first label{
 	width: 150px;
 	margin:0 auto;
@@ -658,7 +713,7 @@ div.sub_header4{
 	display: block;
 }
 .page_content .select_wrap .select_box .select_first label.select{
-	background: url(../images/quota/circle_on.png) 0px 23px no-repeat;
+	background: url(../images/quota/circle_on.png) 0px 30px no-repeat;
 }
 .page_content .select_wrap .select_box .select_first label p{
 	font-size: 14px;
@@ -690,13 +745,13 @@ div.sub_header4{
 	width: 150px;
 }
 .page_content .select_wrap .select_box .select_second span.under_arrow{
-	width: 45px;
+	width: 1px;
 	height: 100%;
 	border-left: 1px solid #dcdcdc;
-	background: url(../images/quota/under_arrow.png) center center no-repeat;
+	/*background: url(../images/quota/under_arrow.png) center center no-repeat;*/
 	position: absolute;
 	top: 0px;
-	right: 1px;
+	right: 50px;
 	box-sizing: border-box;
 }
 .page_content .select_wrap .select_box .select_second select,
@@ -709,6 +764,9 @@ div.sub_header4{
 	border-radius: 0;
 	padding-left: 15px;
 	color: #919191;
+}
+.page_content .select_wrap .select_box .select_second select{
+	background: url(../images/quota/under_arrow.png) right 18px center no-repeat;
 }
 .page_content .select_wrap .select_box .select_second textarea{
 	margin-bottom: 30px;
@@ -841,6 +899,7 @@ div.sub_header4{
 	width: 560px;
 	float: left;
 	margin-right:20px;
+
 	/*border: 1px solid blue;*/
 }
 .page_content .email_wrap .email_left .email_info{
@@ -890,7 +949,9 @@ div.sub_header4{
 	float: left;
 	overflow: hidden;
 	position: relative;
-}.page_content .email_wrap .email_right input{
+}
+
+.page_content .email_wrap .email_right input{
 	font-size: 13px;
 	padding: 20px 0;
 	width: 100%;
@@ -904,6 +965,10 @@ div.sub_header4{
 	font-weight: bold;
 	background-color: #ededed;
 	padding-left: 20px;
+}
+.page_content .email_wrap .email_right input[name="main2"],
+.page_content .email_wrap .email_right input[name="main3"]{
+	margin-top: -2px;
 }
 .page_content .email_wrap .email_right input[name="onedepth"],
 .page_content .email_wrap .email_right input[name="onedepth2"],
@@ -948,6 +1013,43 @@ div.sub_header4{
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #ededed inset;
+}
+.policy input{
+	position: absolute;
+	visibility: hidden;
+}
+.policy label.p_check{
+	background: url(../images/quota/policy.png) left 50px center no-repeat;
+	padding: 0 !important;
+	color: #000 !important;
+	padding:10px 0px 10px 80px !important;
+	font-weight: bold;
+}
+.policy_popup{
+	display: none;
+	width:960px;
+}
+.policy_popup h3{
+	background-color: #d6393f;
+	color: #fff;
+	font-size: 17px;
+	padding: 20px 0px 20px 40px;
+}
+.policy_popup .pp_content{
+	padding: 40px;
+	background-color: #fff;
+}
+.policy_popup .pp_content h4{
+	background: url(../images/page/full_arrow.png) left center no-repeat;
+    background-size: 15px 15px;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.policy_popup .pp_content p{
+	padding-top: 15px;
+	padding-left: 25px;
+	line-height: 23px;
 }
 /*step2끝*/
 
@@ -1005,14 +1107,33 @@ input:-webkit-autofill {
 /*그외*/
 .go_top{
 	width: 52px;
-	position: fixed;
-	bottom: 32%;
-	right: 11%;
+	height: 53px;
+	position: absolute;
+	bottom: 200%;
+	right: 0%;
 	display: none;
 	z-index: 9999;
 	cursor: pointer;
+	background: url(../images/main/go_top.png)center center no-repeat;
 }
-
+.go_top.add_top{
+	background: url(../images/main/add_top.png)center center no-repeat;	
+}
+.layer{
+	background: #000;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1003;
+	display: none;
+}
+.down{
+	background-color: #fff;
+	transition: all 0.3s ease-in;
+}
 
 
 

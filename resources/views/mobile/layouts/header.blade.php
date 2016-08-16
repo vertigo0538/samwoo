@@ -38,7 +38,7 @@
 						<li><a href="/specialvehicle/topcar/topcar_1">합판타입</a></li>
 					</ul>
 					<h3><a href="/specialvehicle/dump">덤프/특장차 라이너</a></h3>
-					<h3><a href="/specialvehicle/swing">탑차용 swing door</a></h3>
+					<h3><a href="/specialvehicle/swing">탑차용 SWING DOOR</a></h3>
 				</div>
 
 			</li>

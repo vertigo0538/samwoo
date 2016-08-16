@@ -23,6 +23,7 @@
     <script type="text/javascript" src="{{ URL::asset('js/m_main.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/iscroll.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/jquery.validate.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/jquery.bpopup.min.js') }}"></script>
     <!-- <script type="text/javascript" src="{{ URL::asset('js/jquery.mobile-1.4.5.min.js') }}"></script> -->
     <!-- jquery -->
     <!-- bxslider -->

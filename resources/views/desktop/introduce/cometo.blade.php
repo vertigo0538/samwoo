@@ -1,6 +1,6 @@
 @extends('desktop.introduce.index')
 @section('sub_content')
-	<section>
+	<section class="map1">
 		<h3>본사</h3>
 	<div id="map" style="width:680px; height:380px;"></div>
 	<div class="info">
@@ -82,7 +82,14 @@
                 //마커 라벨 표시
                 var oLabel1 = new nhn.api.map.MarkerLabel(); // 마커 라벨 선언
                 oMap.addOverlay(oLabel1);// 마커 라벨 지도에 추가. 기본은 라벨이 보이지 않는 상태로 추가됨
-                //oLabel1.setVisible(true, oMarker);// 마커 라벨 보이기 
+                oLabel1.setVisible(true, oMarker);// 마커 라벨 보이기 
+			
+                //클릭시 네이버지도로 이동
+                oMap.attach('click', function(){
+					//alert(evt.point.getY() + ', ' + evt.point.getX());
+					var url ="http://map.naver.com/?menu=location&mapMode=0&lat=37.4826196&lng=126.508041&dlevel=12&searchCoord=126.9351759%3B37.5739086&query=7J247LKc6rSR7Jet7IucIOykkeq1rCDsmIHsooXrjIDroZwgMzI367KI6ri4IDEyLTIsIDPsuLUo7Jq07ISc64%2BZKQ%3D%3D&mpx=09410117%3A37.5739086%2C126.9351759%3AZ11%3A0.0212703%2C0.0213682&tab=1&enc=b64"
+					window.open(url);
+				});
 		}
 		function map2(){
 			var oPoint2 = new nhn.api.map.LatLng(37.4826187, 126.5080421);
@@ -121,6 +128,12 @@
                 var oLabel2 = new nhn.api.map.MarkerLabel(); // 마커 라벨 선언
                 oMap2.addOverlay(oLabel2);// 마커 라벨 지도에 추가. 기본은 라벨이 보이지 않는 상태로 추가됨
                 //oLabel1.setVisible(true, oMarker);// 마커 라벨 보이기 
+		
+                oMap2.attach('click', function(){
+					//alert(evt.point.getY() + ', ' + evt.point.getX());
+					var url ="http://map.naver.com/?menu=location&mapMode=0&lat=37.4826196&lng=126.508041&dlevel=12&searchCoord=126.9351759%3B37.5739086&query=7J247LKc6rSR7Jet7IucIOykkeq1rCDsmIHsooXrjIDroZwgMzI367KI6ri4IDEyLTIsIDPsuLUo7Jq07ISc64%2BZKQ%3D%3D&mpx=09410117%3A37.5739086%2C126.9351759%3AZ11%3A0.0212703%2C0.0213682&tab=1&enc=b64"
+					window.open(url);
+				});
 		}	
 		
 		

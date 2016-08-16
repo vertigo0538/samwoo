@@ -3,20 +3,20 @@
 		<aside id="sidebar">
 			<h2>건자재</h2>
 			<div class="sidebar_border">
-				<div class="menu"><a class="{{$title == 'dec' ? $active = 'active' : $active = ''}}" href="{{url($title2.'/dec')}}">{{$title1[0]}}</a></div>	
+				<div class="menu"><a class="{{$title == 'dec' ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/dec')}}">{{$title1[0]}}</a></div>	
 				<div class="down_hover">
-					<div class="menu down_arrow">
+					<div class="menu down_arrow {{$title == 'huroring'? $active = 'active' : $active = ''}}">
 						<a class="{{$title == 'huroring' ? $active = 'active' : $active = ''}}" href="{{url($title2.'/huroring/huroring_0')}}">{{$title1[1]}}</a>
 					</div>
 					<div class="aru_sub">
 						<ul>
 							@for ($i=0; $i < count($title3['huroring']); $i++ ) 					
-								<li><a class="{{$title4 == 'huroring_'.$i ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/huroring/huroring_'.$i)}}">{{$title3['huroring'][$i]}}</a></li>
+								<li><a class="{{$title4 == 'huroring_'.$i ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/huroring/huroring_'.$i)}}">- {{$title3['huroring'][$i]}}</a></li>
 							@endfor						
 						</ul>
 					</div>	
 				</div>
-				<div class="menu"><a class="{{$title == 'etc'? $active = 'active' : $active = ''}}" href="{{url($title2.'/etc')}}">{{$title1[2]}}</a></div>	
+				<div class="menu {{$title == 'etc'? $active = 'active' : $active = ''}}"><a class="{{$title == 'etc'? $active = 'active' : $active = ''}}" href="{{url($title2.'/etc')}}">{{$title1[2]}}</a></div>	
 				<div class="empty"></div>
 				<div class="menu go_quota"><a href="/step1"><span class="blind">견적요청</span></a></div>
 			</div>

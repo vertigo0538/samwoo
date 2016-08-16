@@ -19,7 +19,7 @@ class SamwooController extends Controller
     public function specialvehicle($pageId)
     {
         $title = $pageId; //사이드바 메뉴 보여주기
-        $title1 = ['평판/장폭 및 로베드 트레일러','윙바디용 바닥재','탑차용 바닥재','덤프/특장차 라이너','탑차용 swing door'];   //h2 제목 뿌려주기
+        $title1 = ['평판/장폭 및 로베드 트레일러','윙바디용 바닥재','탑차용 바닥재','덤프/특장차 라이너','탑차용 SWING DOOR'];   //h2 제목 뿌려주기
         $title2 = 'specialvehicle'; //a link 공통된 url
         $title3 = array(
                 'wing' => array('목재타입','합판타입','무늬합판'),

@@ -27,7 +27,7 @@
 									<li><a href="/specialvehicle/peong">평판/장폭 및 로베드 트레일러</a></li>
 									<li class="mgr"><a href="/specialvehicle/wing/wing_0">윙바디용 바닥재</a></li>
 									<li><a href="/specialvehicle/topcar/topcar_0">탑차용 바닥재</a></li>
-									<li class="mgr"><a href="/specialvehicle/swing">탑차용 Swing Door</a></li>
+									<li class="mgr"><a href="/specialvehicle/swing">탑차용 SWING DOOR</a></li>
 									<li class="mgb"><a href="/specialvehicle/dump">덤프/특장차용 라이너</a></li>
 								</ul>
 							</div>
@@ -81,7 +81,7 @@
 							</div>
 							<div class="second_depth cf">
 								<section>
-									<h3><a href="/construction/dec">데크재(야외 데크재용)</a></h3>
+									<h3 class="except_right"><a href="/construction/dec">데크재(야외 데크재용)</a></h3>
 								</section>
 								<section>
 									<h3>후로링(건축 및 체육관 외)</h3>
@@ -91,7 +91,7 @@
 									</ul>	
 								</section>
 								<section class="mgr">
-									<h3><a href="/construction/etc">기타</a></h3>
+									<h3 class="except_right"><a href="/construction/etc">기타</a></h3>
 								</section>
 							</div>
 						</div> 

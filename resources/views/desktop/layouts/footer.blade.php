@@ -17,10 +17,12 @@
 			<p>
 				<span>ⓒ 2016 SAMWOOTJPLUS INC. ALL RIGHTS RESERVED.</span>
 			</p>	
+		<div class="go_top">
+			<!-- <img src="{{URL::asset('/images/main/go_top.png')}}" alt=""> -->
+		</div>			
 		</footer>
 	</div>
-	<div class="go_top">
-		<img src="{{URL::asset('/images/main/go_top.png')}}" alt="">
-	</div>			
+	<div class="layer"></div>
+	
 </body> 
 </html>

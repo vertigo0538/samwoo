@@ -4,7 +4,7 @@
 			<h2>회사소개</h2>
 			<div class="sidebar_border">
 				<div class="menu">
-					<a class="{{$title =='hello' ? $active = 'active2' : $active = ''}} href="{{url($title2.'/hello')}}">{{$title1[0]}}</a>
+					<a class="{{$title =='hello' ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/hello')}}">{{$title1[0]}}</a>
 				</div>
 				<div class="menu">
 					<a class="{{$title =='cometo' ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/cometo')}}">{{$title1[1]}}</a>

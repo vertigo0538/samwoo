@@ -10,7 +10,7 @@
 			<p><img src="{{URL::asset('images/construction/dec_2-1.png')}}" alt=""></p>
 			<span>아피통(APITONG)</span>
 		</div>
-		<div class="mgr">
+		<div class="mgr full">
 			<p><img src="{{URL::asset('images/construction/dec_2-2.png')}}" alt=""></p>
 			<span>아피통(APITONG)</span>
 		</div>
@@ -18,7 +18,7 @@
 			<p><img src="{{URL::asset('images/construction/dec_2-3.png')}}" alt=""></p>
 			<span>동남아산 하드우드(MLH)</span>
 		</div>
-		<div class="mgr">
+		<div class="mgr full">
 			<p><img src="{{URL::asset('images/construction/dec_2-4.png')}}" alt=""></p>
 			<span>동남아산 하드우드(MLH)</span>
 		</div>
@@ -26,7 +26,7 @@
 			<p><img src="{{URL::asset('images/construction/dec_2-5.png')}}" alt=""></p>
 			<span>꾸메아(KUMEA)</span>
 		</div>
-		<div class="mgr">
+		<div class="mgr full">
 			<p><img src="{{URL::asset('images/construction/dec_2-6.png')}}" alt=""></p>
 			<span>꾸메아(KUMEA)</span>
 		</div>
