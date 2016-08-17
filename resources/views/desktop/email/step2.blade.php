@@ -75,7 +75,8 @@
 		
 	</div> <!-- email_wrap -->
 	<div class="policy_popup">
-		<h3>개인정보보호정책 (Personal Information Protection Policy)</h3>
+		<div class="b-close"><img src="{{URL::asset('/images/quota/exit.png')}}" alt="" width="23"></div>
+		<h3>개인정보 보호정책(Personal Information Protection Policy)</h3>
 		<div class="pp_content">
 			<h4>개인정보 수집 및 이용에 대한 동의</h4>
 			<p>

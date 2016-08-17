@@ -9,11 +9,11 @@
 	<section class="cf">
 		<h3>목재 상세 이미지</h3>
 		<div>
-			<p><img src="{{URL::asset('images/common/ln_2-2.png')}}" alt=""></p>
+			<p><img width="70" src="{{URL::asset('images/common/ln_2-2.png')}}" alt=""></p>
 			<span>아피통(라이너용)목재</span>
 		</div>
 		<div class="">
-			<p><img src="{{URL::asset('images/common/ln_2-1.png')}}" alt=""></p>
+			<p><img width="70" src="{{URL::asset('images/common/ln_2-1.png')}}" alt=""></p>
 			<span>아피통(라이너용)목재</span>
 		</div>
 	</section>

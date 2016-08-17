@@ -67,7 +67,14 @@ $(function(){
 	}
 	
 	
-	
+	//개인정보보호정책	
+	$(".policy label").click(function(){
+		$(this).toggleClass("view");
+		if($(this).hasClass("view")){
+			$(".policy_popup").bPopup();	
+		}
+		
+	});
 
 
 

@@ -1,5 +1,8 @@
 @extends('mobile.introduce.index')
 @section('sub_content')
+	<style>
+		.go_top{display: none;}
+	</style>
 	<section class="description img_1">
 		<img src="{{URL::asset('images/construction/none.jpg')}}" alt="장폭 트레일러" class="mb10">
 		<article class="hello">

@@ -16,7 +16,7 @@
 			<span>아피통(보강목용)</span>
 		</div>
 		<div class="">
-			<p><img height="100%" src="{{URL::asset('images/common/apitong_2-2.png')}}" alt=""></p>
+			<p><img width="100%" height="100%" src="{{URL::asset('images/common/apitong_2-2.png')}}" alt=""></p>
 			<span>아피통(보강목용)</span>
 		</div>
 	</section>

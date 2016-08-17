@@ -1031,15 +1031,20 @@ input:-webkit-autofill {
 	visibility: hidden;
 }
 .policy label.p_check{
-	background: url(../images/quota/policy.png) left 50px center no-repeat;
+	background: url(../images/quota/policy.png) 55px center no-repeat;
 	padding: 0 !important;
 	color: #000 !important;
-	padding:10px 0px 10px 80px !important;
+	padding:10px 0px 10px 85px !important;
 	font-weight: bold;
+}
+.policy label.view{
+	background: url(../images/quota/check.png) 55px center no-repeat;
+	background-size: 20px 20px;
 }
 .policy_popup{
 	display: none;
 	width:960px;
+	position: relative;	
 }
 .policy_popup h3{
 	background-color: #d6393f;
@@ -1062,6 +1067,12 @@ input:-webkit-autofill {
 	padding-top: 15px;
 	padding-left: 25px;
 	line-height: 23px;
+}
+.policy_popup .b-close{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	cursor: pointer;
 }
 /*step2끝*/
 
