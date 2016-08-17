@@ -646,6 +646,9 @@ body{
 	color: #d2232a;	
 	box-sizing: border-box;
 }
+#wrap_main2 .email_info .policy label{
+	padding: 10px 0px 0px 95px;
+}
 
 #wrap_main2 .email_info textarea{
 	width: 76%;
