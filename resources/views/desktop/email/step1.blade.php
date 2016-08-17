@@ -59,14 +59,15 @@ var _C_2Depth_T2 = ["(남양재)APITONG(아피통)","(남양재)MERPAU(멀파우
                     "(북양재)MAPLE(단풍나무)","(북양재)OAK(참나무)","(북양재)BEECH(너도밤나무)","(북양재)ASH"
                     ];
 
-var _C_3Depth_T1 = ["SOLID(솔리드)"];
+var _C_3Depth_T1 = ["SOLID(솔리드)","기타(별도기재부탁드립니다)"];
 var _C_3Depth_T2 = ["SOLID(솔리드 코팅사양)"];
+var _C_3Depth_T3 = ["SOLID(솔리드)"];
 
-var _C_4Depth_T1 = ["두께*폭(19*80)"];
+var _C_4Depth_T1 = ["두께*폭(19*80)","기타(별도기재부탁드립니다)"];
 var _C_4Depth_T2 = ["두께*폭(15*75)","두께*폭(18*75)","두께*폭(24*60)"];
 var _C_4Depth_T3 = ["두께*폭(17*90)","기타(별도기재부탁드립니다)"];
 var _C_4Depth_T4 = ["두께*폭(15*150)","기타(별도기재부탁드립니다)"];
-var _C_4Depth_T5 = ["두께*폭(15*150)","두께*폭(15*75)","두께*폭(15*120)","두께*폭(15*150)","기타(별도기재부탁드립니다)"];
+var _C_4Depth_T5 = ["두께*폭(15*60)","두께*폭(15*75)","두께*폭(15*120)","두께*폭(15*150)","기타(별도기재부탁드립니다)"];
 
 
 var _D_Text= ["기타(별도기재부탁드립니다)"];
@@ -380,6 +381,7 @@ function reset(el){
             case "기타(해외제조사)" :
                 sel3.parent().hide();
                 setSelectBox(_D_Text2,sel);
+                reset(sel3);
             break;
             case "야외 데크재" :
                 div.find(".hi").remove();
@@ -430,11 +432,13 @@ function reset(el){
                 setSelectBox(_A_3Depth_T1,sel);
             break;
             case "로베드 트레일러" :
-                sel.parent().hide();
+                setSelectBox(_A_3Depth_T1,sel);
+                //sel.parent().hide();
                 //sel_option_none;
             break;
             case "기타 특수" :
-                sel.parent().hide();
+                setSelectBox(_A_3Depth_T1,sel);
+                //sel.parent().hide();
                 //sel_option_none;
             break;
             case "2.5톤~3.5톤" :
@@ -443,15 +447,16 @@ function reset(el){
             break;
             case "4.5톤~5톤" :
                 if(sel1.val() == "윙바디(WING-CAR)"){
-                    sel.parent().show();
+                    //sel.parent().show();
                     setSelectBox(_A_3Depth_T1,sel);
                 }
                 if(sel1.val() == "탑차(TOP_CAR)"){
-                    sel.parent().hide();
+                    setSelectBox(_A_3Depth_T1,sel);
                 }
 			break;
             case "8톤~25톤" :
-                sel.parent().hide();
+                setSelectBox(_A_3Depth_T1,sel);
+                //sel.parent().hide();
                 //sel_option_none;
             break;
             case "1톤~1.5톤" :
@@ -503,55 +508,87 @@ function reset(el){
                 setSelectBox(_B_3Depth_T2,sel);
             break;
             case "(남양재)APITONG(아피통)" :
-                sel.parent().show();
-                sel2.parent().show();
-                _this.find($(".except")).show();
+                if(sel1.val() == "야외 데크재"){
+                   div.find(".hi").remove();
+                   // reset(sel);
+                   // reset(sel2);
+                // sel.parent().show();
+                // sel2.parent().show();
+                //_this.find($(".except")).show();
                 setSelectBox(_C_3Depth_T1,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)"){
+                    //reset(sel2);
+                    div.find(".hi").remove();
+                    setSelectBox(_C_3Depth_T3,sel); 
+                }
+
+                
             break;
             case "(남양재)MLH(하드우드)" :
                 if(sel1.val() == "야외 데크재"){
-                    sel.parent().show();
-                	sel2.parent().show();
-                    _this.find($(".except")).hide();
-                    setSelectBox(_D_Text,sel);
+                    div.find(".hi").remove();
+                    // reset(sel);
+                    // reset(sel2);
+                    //sel.parent().show();
+                	//sel2.parent().show();
+                    //_this.find($(".except")).hide();
+                    setSelectBox(_C_3Depth_T1,sel);
                     //sel4.parent().remove();
                 }
                 if(sel1.val() == "후로링(건축&체육관 外)"){
+                    div.find(".hi").remove();
                     setSelectBox(_C_3Depth_T2,sel); 
                 }
             break;
             case "(남양재)TALI(탈리)" :
-                sel.parent().hide();
-                sel2.parent().hide();
+                //reset(sel2);
+                 div.find(".hi").remove();
+                setSelectBox(_C_3Depth_T1,sel);
+                // sel.parent().hide();
+                // sel2.parent().hide();
                 //setSelectBox(_D_Text,sel);
             break;
             case "(남양재)IPE(이페)" :
-                sel.parent().hide();
-                sel2.parent().hide();
+                //reset(sel2);
+                div.find(".hi").remove();
+                setSelectBox(_C_3Depth_T1,sel);
+                // sel.parent().hide();
+                // sel2.parent().hide();
             break;
             case "(북양재)탄화목(참나무外)" :
-                sel.parent().hide();
-                sel2.parent().hide();
+                //reset(sel2);
+                div.find(".hi").remove();
+                setSelectBox(_C_3Depth_T1,sel);
+                // sel.parent().hide();
+                // sel2.parent().hide();
             break;
             case "(남양재)MERPAU(멀파우)" :
-                setSelectBox(_C_3Depth_T1,sel);
+                div.find(".hi").remove();
+                setSelectBox(_C_3Depth_T3,sel);
             break;
             case "(남양재)ACACIA(아카시아)" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "(남양재)MERBAU(멀바우)" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "(북양재)MAPLE(단풍나무)" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "(북양재)OAK(참나무)" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "(북양재)BEECH(너도밤나무)" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "(북양재)ASH" :
+                div.find(".hi").remove();
                 setSelectBox(_C_3Depth_T2,sel);
             break;
             case "견적요청 바로가기" :
@@ -580,10 +617,28 @@ function reset(el){
         // alert(val);  
         switch(val) {
             case "기타(별도기재부탁드립니다)" :
-                setSelectBox(_D_Text,sel);
+                   //reset(sel);
+                setSelectBox(_C_4Depth_T1,sel);
             break;
             case "SOLID(솔리드)" :
                 if(sel1.val() == "야외 데크재" && sel2.val() == "(남양재)APITONG(아피통)"){
+                    //reset(sel);
+                    setSelectBox(_C_4Depth_T1,sel);
+                }
+                if(sel1.val() == "야외 데크재" && sel2.val() == "(남양재)MLH(하드우드)"){
+                    //reset(sel);
+                    setSelectBox(_C_4Depth_T1,sel);
+                }
+                if(sel1.val() == "야외 데크재" && sel2.val() == "(남양재)TALI(탈리)"){
+                    
+                    setSelectBox(_C_4Depth_T1,sel);
+                }
+                if(sel1.val() == "야외 데크재" && sel2.val() == "(남양재)IPE(이페)"){
+                    //reset(sel);
+                    setSelectBox(_C_4Depth_T1,sel);
+                }
+                if(sel1.val() == "야외 데크재" && sel2.val() == "(북양재)탄화목(참나무外)"){
+                    //reset(sel);
                     setSelectBox(_C_4Depth_T1,sel);
                 }
                 if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(남양재)APITONG(아피통)"){
@@ -597,7 +652,23 @@ function reset(el){
             case "SOLID(솔리드 코팅사양)" :
                 if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(남양재)MLH(하드우드)"){
                     setSelectBox(_C_4Depth_T4,sel);
-                }else{
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(남양재)ACACIA(아카시아)"){
+                    setSelectBox(_C_4Depth_T4,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(남양재)MERBAU(멀바우)"){
+                    setSelectBox(_C_4Depth_T4,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(북양재)MAPLE(단풍나무)"){
+                    setSelectBox(_C_4Depth_T5,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(북양재)OAK(참나무)"){
+                    setSelectBox(_C_4Depth_T5,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(북양재)BEECH(너도밤나무)"){
+                    setSelectBox(_C_4Depth_T5,sel);
+                }
+                if(sel1.val() == "후로링(건축&체육관 外)" && sel2.val() == "(북양재)ASH"){
                     setSelectBox(_C_4Depth_T5,sel);
                 }
             break;
@@ -612,9 +683,20 @@ $('.select_wrap').delegate('select[name=fourdepth]','change',function(){
     var _this = $(this),
             val = _this.val();
     var parents = _this.parent().parent().parent().parent().parent();
+    var div = _this.closest('.select_box');
+    var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
         	_this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")		
+        break;
+        case "두께*폭(19*80)" :
+            // if(sel.val() == "SOLID(솔리드)"){
+            //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            // }
+            if(sel.val() == "기타(별도기재부탁드립니다)"){
+                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            }
+            
         break;
     }
 });
@@ -622,9 +704,20 @@ $('.select_wrap').delegate('select[name=fourdepth2]','change',function(){
     var _this = $(this),
             val = _this.val();
     var parents = _this.parent().parent().parent().parent().parent();
+    var div = _this.closest('.select_box');
+    var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-        	_this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")		
+            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")        
+        break;
+        case "두께*폭(19*80)" :
+            // if(sel.val() == "SOLID(솔리드)"){
+            //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            // }
+            if(sel.val() == "기타(별도기재부탁드립니다)"){
+                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            }
+            
         break;
     }
 });
@@ -632,10 +725,20 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
     var _this = $(this),
             val = _this.val();
     var parents = _this.parent().parent().parent().parent().parent();
+    var div = _this.closest('.select_box');
+    var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-        	_this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")		
-        	
+            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")        
+        break;
+        case "두께*폭(19*80)" :
+            // if(sel.val() == "SOLID(솔리드)"){
+            //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            // }
+            if(sel.val() == "기타(별도기재부탁드립니다)"){
+                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+            }
+            
         break;
     }
 });

@@ -24,7 +24,8 @@
 			<li class="aru_sub {{$ex[1] == 'specialvehicle'? $active = 'on' : $active = ''}}">
 				<h2>특장차</h2>
 				<span>(트레일러&윙바디/탑차)</span>
-				<div class="sub_menu">
+				<div id="wrapper" class="sub_menu">
+
 					<h3><a href="/specialvehicle/peong">평판/장폭 및 로베드 트레일러</h3></a>
 					<h3>윙바디용 바닥재</h3>
 					<ul>
@@ -39,8 +40,9 @@
 					</ul>
 					<h3><a href="/specialvehicle/dump">덤프/특장차 라이너</a></h3>
 					<h3><a href="/specialvehicle/swing">탑차용 SWING DOOR</a></h3>
+						
+				
 				</div>
-
 			</li>
 			<li class="aru_sub {{$ex[1] == 'commontruck'? $active = 'on' : $active = ''}}">
 				<h2>상용트럭적재함</h2>

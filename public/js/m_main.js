@@ -47,17 +47,18 @@ $(function(){
 	function SidebarClick(){	
 		$(this).toggleClass("open");
 		if ($(this).hasClass("open")) {
-			
 			$(".nav").fadeIn();
 			$(".header").addClass("color");
 			$(".layer").show();
 			// $("body").bind('touchmove', function(e){e.preventDefault()});
-			// var myScroll = new IScroll('sub_menu', {click:true});
-			//myScroll.refresh(); //사이드바 메뉴클릭시 사이드바 높이 다시잡기
+			//  var myScroll = new IScroll('#wrapper', {click:true});
+			//  new IScroll('#wrapper', { hScrollbar: false, vScrollbar: false, hScroll: false ,click:true});
+			//  myScroll.refresh(); //사이드바 메뉴클릭시 사이드바 높이 다시잡기
 		}else{
 			$(".nav").fadeOut();			
 			$(".header").removeClass("color");
 			$(".layer").hide();
+			$("body").unbind('touchmove');
 		}
 	}
 	//사이드바 서브메뉴 열기
@@ -77,7 +78,7 @@ $(function(){
 	});
 
 
-
+	//new IScroll('#wrapper', {click:true});
 
 
 

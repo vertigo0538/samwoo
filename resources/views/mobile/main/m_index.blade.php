@@ -1,5 +1,10 @@
 @extends('mobile.layouts.main')
 @section('content')
+	<style>
+		.go_top{
+			display: none;
+		}
+	</style>
 	<div class="slider_wrap">
 		<ul class="bxslider cf">
 			<li>

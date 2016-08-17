@@ -29,7 +29,7 @@ body{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: 9000;
+	z-index: 9980;
 	display: none;
 
 }
@@ -77,6 +77,12 @@ body{
 }*/
 .header .nav > ul > li.on .sub_menu{
 	display: block;
+	overflow-y:auto;
+	height: 100%;                                     
+	/*border: 1px solid red;*/
+}
+#wrapper{
+	overflow: hidden;
 }
 .header .nav > ul > li h2{
 	font-size: 14px;
@@ -128,10 +134,12 @@ body{
 }
 .header .nav .sub_menu ul{
 	margin-left: 20px;
+	/*height: 100%;*/
 }
-.header .nav .sub_menu > ul > li{
+.header .nav .sub_menu > ul > li {
 	padding:15px 0 15px 18px;
 	border-bottom: 1px solid #cecece;
+	/*height: 400px;*/
 }
 .header .nav .sub_menu > ul > li a{
 	color: #616161;
