@@ -115,10 +115,12 @@ class EmailController extends Controller
                     '1분류' => $request->onedepth,
                     '2분류' => $request->twodepth,
                     '3분류' => $request->threedepth,
-                    '4분류' => $request->fourdepth,
-                    '5분류' => $request->fivedepth
+                    '4분류' => $request->fourdepth
+                    //'5분류' => $request->fivedepth
                 );
-
+        $firstetc = array(
+                    '5분류' => $request->fivedepth
+            );
 
         //$firstfilter = array_filter($firstdatas); // 빈 배열은 출력되지 않게함
 
@@ -127,9 +129,12 @@ class EmailController extends Controller
                     '1분류' => $request->onedepth2,
                     '2분류' => $request->twodepth2,
                     '3분류' => $request->threedepth2,
-                    '4분류' => $request->fourdepth2,
-                    '5분류' => $request->fivedepth2
+                    '4분류' => $request->fourdepth2
+                    //'5분류' => $request->fivedepth2
                 );
+        $secondetc = array(
+                    '5분류' => $request->fivedepth2
+            );
         //$secondfilter = array_filter($seconddatas);
 
         $thirddatas = array(
@@ -137,9 +142,12 @@ class EmailController extends Controller
                     '1분류' => $request->onedepth3,
                     '2분류' => $request->twodepth3,
                     '3분류' => $request->threedepth3,
-                    '4분류' => $request->fourdepth3,
-                    '5분류' => $request->fivedepth3
+                    '4분류' => $request->fourdepth3
+                    //'5분류' => $request->fivedepth3
                 );
+        $thirdetc = array(
+                    '5분류' => $request->fivedepth3
+            );
         //$thirdfilter = array_filter($thirddatas);
 
         $mail_content = array(
@@ -150,11 +158,11 @@ class EmailController extends Controller
             'etc' => $request->etc
             //'hidden' => $request->hidden
         );
-        //$datas = $request->except('_token');
+        
 
 
 
-        Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstdatas'=>$firstdatas,'seconddatas'=>$seconddatas,'thirddatas'=>$thirddatas],function($message) use ($mail_content){
+        Mail::send('desktop.email.send',['datas1'=>$datas1,'mail_content'=>$mail_content,'firstdatas'=>$firstdatas,'seconddatas'=>$seconddatas,'thirddatas'=>$thirddatas,'firstetc'=>$firstetc,'secondetc'=>$secondetc,'thirdetc'=>$thirdetc],function($message) use ($mail_content){
             $message->from($mail_content['email']);
             $message->to('ston0538@gmail.com');
             $message->subject($mail_content['shopname'].'의 견적서 요청');

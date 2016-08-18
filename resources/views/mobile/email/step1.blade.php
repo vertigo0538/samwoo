@@ -278,7 +278,7 @@ $(function(){
 
 function reset(el){
     el.find('option').remove();
-    $(".hi").remove();
+    //$(".hi").remove();
 }
     
 
@@ -306,7 +306,7 @@ function reset(el){
              div = _this.closest('.select_box'),
              sel = div.find('select[name=onedepth],select[name=onedepth2],select[name=onedepth3]');
              sel3 = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
-
+             reset(div);
         //alert(val);
         // console.log( div );
          //console.log( val );
@@ -320,7 +320,7 @@ function reset(el){
             div.find(".text_1").text("• 차종");
             div.find(".text_2").text("• 상세차종");
             div.find(".text_3").text("• 보수부위");
-            div.find(".except").hide();
+            div.find(".hi").remove();
             break;
             case "상용트럭":
             set1depth(_B_1Depth,sel);
@@ -329,18 +329,16 @@ function reset(el){
             div.find(".text_2").text("• 차종");
             div.find(".text_3").text("• 보수부위");
             div.find(".except").hide();
+            div.find(".hi").remove();
             break;
             case "건자재":
             set1depth(_C_1Depth,sel);
             sel3.parent().show();
             div.find(".except").show();
-            // $(".text_1").text("• 용도");
-            // $(".text_2").text("• 수종");
-            // $(".text_3").text("• 제품타입");
-            // $(".except").show();
             div.find(".text_1").text("• 용도");
             div.find(".text_2").text("• 수종");
             div.find(".text_3").text("• 제품타입");
+            div.find(".hi").remove();
             
             break;
         }
@@ -374,50 +372,50 @@ function reset(el){
 
         switch(val) {
             case "트레일러" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T1,sel);
             break;
             case "윙바디(WING-CAR)" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T2,sel);
             break;
             case "탑차(TOP_CAR)" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T3,sel);
             break;
             case "덤프/특장차 용 라이너" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().hide();
                 setSelectBox(_A_2Depth_T4,sel);
             break;
             case "현대" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_B_2Depth_T1,sel);
             break;
             case "대우" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_B_2Depth_T2,sel);
             break;
             case "기타(해외제조사)" :
-                reset(sel3);
+                //reset(sel3);
                 sel3.parent().hide();
                 setSelectBox(_D_Text2,sel);
-                reset(sel3);
+                //reset(sel3);
             break;
             case "야외 데크재" :
-                reset(sel3);
-                reset(sel4);
+                //reset(sel3);
+                //reset(sel4);
                 div.find(".hi").remove();
                 setSelectBox(_C_2Depth_T1,sel);
             break;
             case "후로링(건축&체육관 外)" :
-                reset(sel3);
-                reset(sel4);
+                //reset(sel3);
+                //reset(sel4);
                 sel3.parents().show();
                 sel4.parents().show();
                 div.find(".hi").remove();
@@ -728,14 +726,14 @@ $('.select_wrap').delegate('select[name=fourdepth2]','change',function(){
     var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
      case "기타(별도기재부탁드립니다)" :
-            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")        
+            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")        
         break;
         case "두께*폭(19*80)" :
             // if(sel.val() == "SOLID(솔리드)"){
             //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             // }
             if(sel.val() == "기타(별도기재부탁드립니다)"){
-                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")            
             }
             
         break;
@@ -749,14 +747,14 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
     var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")        
+            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")        
         break;
         case "두께*폭(19*80)" :
             // if(sel.val() == "SOLID(솔리드)"){
             //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             // }
             if(sel.val() == "기타(별도기재부탁드립니다)"){
-                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")            
             }
             
         break;
