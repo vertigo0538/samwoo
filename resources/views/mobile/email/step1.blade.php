@@ -283,21 +283,21 @@ function reset(el){
     
 
 // 1뎁스결정하기
-	$('.select_box_wrap1').delegate('input[name=main]','change',function(){
-		var _this = $(this),
-             div = _this.closest('.select_box');
-             reset(div);
-	});    
-	$('.select_box_wrap2').delegate('input[name=main2]','change',function(){
-		var _this = $(this),
-             div = _this.closest('.select_box');
-             reset(div);
-	});    
-	$('.select_box_wrap3').delegate('input[name=main3]','change',function(){
-		var _this = $(this),
-             div = _this.closest('.select_box');
-             reset(div);
-	});    
+	// $('.select_box_wrap1').delegate('input[name=main]','change',function(){
+	// 	var _this = $(this),
+ //             div = _this.closest('.select_box');
+ //             reset(div);
+	// });    
+	// $('.select_box_wrap2').delegate('input[name=main2]','change',function(){
+	// 	var _this = $(this),
+ //             div = _this.closest('.select_box');
+ //             reset(div);
+	// });    
+	// $('.select_box_wrap3').delegate('input[name=main3]','change',function(){
+	// 	var _this = $(this),
+ //             div = _this.closest('.select_box');
+ //             reset(div);
+	// });    
 
 
     $('.select_wrap').delegate('input[name=main],input[name=main2],input[name=main3]','change',function(){
@@ -309,9 +309,9 @@ function reset(el){
 
         //alert(val);
         // console.log( div );
-         console.log( val );
+         //console.log( val );
 
-        //reset(div);
+        reset(div);
         switch(val){
             case "특장차":
             set1depth(_A_1Depth,sel);
@@ -374,39 +374,50 @@ function reset(el){
 
         switch(val) {
             case "트레일러" :
+                reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T1,sel);
             break;
             case "윙바디(WING-CAR)" :
+                reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T2,sel);
             break;
             case "탑차(TOP_CAR)" :
+                reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_A_2Depth_T3,sel);
             break;
             case "덤프/특장차 용 라이너" :
+                reset(sel3);
                 sel3.parent().hide();
                 setSelectBox(_A_2Depth_T4,sel);
             break;
             case "현대" :
+                reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_B_2Depth_T1,sel);
             break;
             case "대우" :
+                reset(sel3);
                 sel3.parent().show();
                 setSelectBox(_B_2Depth_T2,sel);
             break;
             case "기타(해외제조사)" :
+                reset(sel3);
                 sel3.parent().hide();
                 setSelectBox(_D_Text2,sel);
                 reset(sel3);
             break;
             case "야외 데크재" :
+                reset(sel3);
+                reset(sel4);
                 div.find(".hi").remove();
                 setSelectBox(_C_2Depth_T1,sel);
             break;
             case "후로링(건축&체육관 外)" :
+                reset(sel3);
+                reset(sel4);
                 sel3.parents().show();
                 sel4.parents().show();
                 div.find(".hi").remove();
