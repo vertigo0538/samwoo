@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+body,html{
+	height: 100% !important;
+}
 #wrap_main{
 	width: 960px;
 	margin: 100px auto 0;
