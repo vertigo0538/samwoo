@@ -24,7 +24,7 @@
 
 	}
 	.info_ul li{
-		width: 300px;
+		width: 260px;
 		border:1px solid #dcdcdc;
 		list-style: none;
 		padding: 20px 0;

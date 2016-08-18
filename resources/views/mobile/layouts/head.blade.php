@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="author" content="Scotch">
+    <meta name="title" contetn="차량재,특수목 전문기업 삼우특장플러스">
+    <meta name="keywords" contetn="차량재,특수목 전문기업, 트럭적재함 보수용 목재공급">
+	<meta name="description" content="20여년간 축적된 경험과 기술로 고품질 제품을 연구 개발하여 안정된 가격과 납기,품질을 고객 기업에게 공급합니다. 다양한 규격과 형태의 고품질 목재를 보다 쉽게 제공해드립니다.">
+    <meta>
+	<meta name="author" content="Samwoo">
     <!-- 모바일 메타 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,width=device-width, height=device-height">
     <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
