@@ -3,10 +3,10 @@
 		<aside id="sidebar">
 			<h2>특장차</h2>
 			<div class="sidebar_border">
-				<div class="menu {{$title == 'peong'? $active = 'active2' : $active = ''}}"><a class="{{$title == 'peong'? $active = 'active' : $active = ''}}" href="{{url($title2.'/peong')}}">{{$title1[0]}}</a></div>	
+				<div class="menu {{$title == 'peong'? $active = 'active2' : $active = ''}}"><a class="menu_block {{$title == 'peong'? $active = 'active' : $active = ''}}" href="{{url($title2.'/peong')}}">{{$title1[0]}}</a></div>	
 				<div class="down_hover">
 					<div class="menu down_arrow {{$title == 'wing'? $active = 'active' : $active = ''}}">
-						<a class="" href="{{url($title2.'/wing/wing_0')}}">{{$title1[1]}}</a>
+						<a class="menu_block" href="{{url($title2.'/wing/wing_0')}}">{{$title1[1]}}</a>
 					</div>
 					<div class="aru_sub">
 						<ul>
@@ -18,7 +18,7 @@
 				</div>
 				<div class="down_hover">
 				<div class="menu down_arrow {{$title == 'topcar'? $active = 'active' : $active = ''}}">
-					<a href="{{url($title2.'/topcar/topcar_0')}}">{{$title1[2]}}</a>
+					<a class="menu_block" href="{{url($title2.'/topcar/topcar_0')}}">{{$title1[2]}}</a>
 				</div>
 				<div class="aru_sub">
 					<ul>
@@ -28,8 +28,8 @@
 					</ul>	
 				</div>
 				</div>	
-				<div class="menu {{$title == 'dump'? $active = 'active2' : $active = ''}}"><a class="" href="{{url($title2.'/dump')}}">{{$title1[3]}}</a></div>	
-				<div class="menu {{$title == 'swing'? $active = 'active2' : $active = ''}}"><a class="" href="{{url($title2.'/swing')}}">{{$title1[4]}}</a></div>	
+				<div class="menu {{$title == 'dump'? $active = 'active2' : $active = ''}}"><a class="menu_block" href="{{url($title2.'/dump')}}">{{$title1[3]}}</a></div>	
+				<div class="menu {{$title == 'swing'? $active = 'active2' : $active = ''}}"><a class="menu_block" href="{{url($title2.'/swing')}}">{{$title1[4]}}</a></div>	
 				<div class="empty"></div>
 				<div class="menu go_quota"><a href="/step1"><span class="blind">견적요청</span></a></div>
 			</div>

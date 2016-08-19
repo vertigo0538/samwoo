@@ -3,10 +3,10 @@
 		<aside id="sidebar">
 			<h2>건자재</h2>
 			<div class="sidebar_border">
-				<div class="menu"><a class="{{$title == 'dec' ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/dec')}}">{{$title1[0]}}</a></div>	
+				<div class="menu"><a class="menu_block {{$title == 'dec' ? $active = 'active2' : $active = ''}}" href="{{url($title2.'/dec')}}">{{$title1[0]}}</a></div>	
 				<div class="down_hover">
 					<div class="menu down_arrow {{$title == 'huroring'? $active = 'active' : $active = ''}}">
-						<a class="{{$title == 'huroring' ? $active = 'active' : $active = ''}}" href="{{url($title2.'/huroring/huroring_0')}}">{{$title1[1]}}</a>
+						<a class="menu_block {{$title == 'huroring' ? $active = 'active' : $active = ''}}" href="{{url($title2.'/huroring/huroring_0')}}">{{$title1[1]}}</a>
 					</div>
 					<div class="aru_sub">
 						<ul>
@@ -16,7 +16,7 @@
 						</ul>
 					</div>	
 				</div>
-				<div class="menu {{$title == 'etc'? $active = 'active' : $active = ''}}"><a class="{{$title == 'etc'? $active = 'active' : $active = ''}}" href="{{url($title2.'/etc')}}">{{$title1[2]}}</a></div>	
+				<div class="menu {{$title == 'etc'? $active = 'active' : $active = ''}}"><a class="menu_block {{$title == 'etc'? $active = 'active' : $active = ''}}" href="{{url($title2.'/etc')}}">{{$title1[2]}}</a></div>	
 				<div class="empty"></div>
 				<div class="menu go_quota"><a href="/step1"><span class="blind">견적요청</span></a></div>
 			</div>
