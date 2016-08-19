@@ -490,6 +490,7 @@ div.sub_header4{
 }
 #sidebar .aru_sub a{
 	font-size: 12px;
+	display: block;
 }
 #sidebar .empty{
 	height: 100px;
@@ -1126,7 +1127,7 @@ input:-webkit-autofill {
 /*회사소개*/
 .content .sub_content section article{
 	color: #494949;
-	line-height: 20px;
+	line-height: 23px;
 }
 .info{
 	border: 1px solid #ededed;

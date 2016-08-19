@@ -51,8 +51,8 @@
 					<h3>보강목</h3>
 					<ul>
 						<li><a href="/commontruck/sangall/sangall_0">아피통</a></li>
-						<li><a href="/commontruck/sangall/sangall_1">국내원목</a></li>
 						<li><a href="/commontruck/sangall/sangall_2">신제품</a></li>
+						<li><a href="/commontruck/sangall/sangall_1">국내원목</a></li>
 					</ul>
 					<h3>A/S부품</h3>	
 					<ul>
