@@ -17,9 +17,10 @@
     <title>삼우특장 플러스</title>
     <link rel="stylesheet" href="{{ URL::asset('css/m_common.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/base.css') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/main/favicon.png') }}" />
     <!-- <link rel="stylesheet" href="{{ URL::asset('css/jquery.mobile-1.4.5.min.css') }}"> -->
     <link rel="stylesheet" href="{{ URL::asset('css/jquery.bxslider.css') }}"/>
-    <link rel="icon" href="{{ URL::asset('/images/main/favicon.png') }}">
+    <link rel="icon" href="{{ URL::asset('images/main/favicon.png') }}">
 
     <!-- jquery -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->

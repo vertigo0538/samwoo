@@ -23,7 +23,7 @@
 
 	}*/
 	/*.info_ul li{
-		width: 260px;
+		
 		border:1px solid #dcdcdc;
 		list-style: none;
 		padding: 20px 0;
@@ -110,66 +110,66 @@
 <h2 style="padding-top: 20px;padding-left: 20px;"><img style="width: 17px;display: inline-block;margin-right: 10px;" src="{{URL::asset('/images/page/full_arrow.png')}}" alt="">견적내용</h2>
 <!-- <div class="info cf"> -->
 	<div>
-		<div class="info_ul info_ul2" style="float: left;">
+		<div class="info_ul info_ul2" style="float:left; width:200px;">
 			<ul style="margin:0;padding: 0;">
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" ></li>
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >대분류</li>
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >1분류</li>
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >2분류</li>
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >3분류</li>
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >4분류</li>
-				<!-- <li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;height: 200px;text-align: center;" class="color1">기타 별도기재</li> -->
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" ></li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >대분류</li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >1분류</li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >2분류</li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >3분류</li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >4분류</li>
+				<!-- <li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;height: 200px;text-align: center;" class="color1">기타 별도기재</li> -->
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;">
 			<ul style="margin:0;padding: 0;">
-				<li class="color1" style="background-color: #ededed;font-weight: bold;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서1</li>
+				<li class="color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서1</li>
 				@foreach($firstdatas as $key => $value)
-				<li style="text-align: left; width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="text-align: left; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
-				<li class="color1" style="background-color: #ededed;font-weight: bold;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서2</li>
+				<li class="color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서2</li>
 				@foreach($seconddatas as $key => $value)
-				<li style="text-align: left;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
-				<li class="color1" style="background-color: #ededed;font-weight: bold;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서3</li>
+				<li class="color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서3</li>
 				@foreach($thirddatas as $key => $value)
-				<li style="text-align: left;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
 	</div>
-	<div>
-		<div class="info_ul info_ul2" style="float: left;">
+	<div style="clear:both;">
+		<div class="info_ul info_ul2" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
-				<li style="width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;height: 400px;text-align: center;" class="color1">기타 별도기재</li>
+				<li style="border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;height: 400px;text-align: center;" class="color1">기타 별도기재</li>
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
 				@foreach($firstetc as $key => $value)
-				<li style="height: 400px;text-align: left;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="height: 400px;text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
 				@foreach($secondetc as $key => $value)
-				<li style="height: 400px;text-align: left;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="height: 400px;text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
-		<div class="info_ul" style="float: left;">
+		<div class="info_ul" style="float:left; width:200px;"">
 			<ul style="margin:0;padding: 0;">
 				@foreach($thirdetc as $key => $value)
-				<li style="height: 400px;text-align: left;width: 260px;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
+				<li style="height: 400px;text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
 			</ul>
 		</div>
