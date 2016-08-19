@@ -119,7 +119,7 @@
 			<li style="margin-left:0px !important; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 300px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >별도기재</li>
 		</ul>
 	</div>
-	<div class="info_ul" style="float:left; width:40%;">
+	<div class="info_ul" style="float:left; width:80%;">
 			<ul style="margin:0;padding: 0;">
 				@foreach($firstdatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
@@ -142,7 +142,7 @@
 			<li style="margin-left:0px !important; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 300px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >별도기재</li>
 		</ul>
 	</div>
-	<div class="info_ul" style="float:left; width:40%;">
+	<div class="info_ul" style="float:left; width:80%;">
 			<ul style="margin:0;padding: 0;">
 				@foreach($seconddatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
@@ -165,7 +165,7 @@
 			<li style="margin-left:0px !important; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 300px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed; font-weight: bold;" class="color1" >별도기재</li>
 		</ul>
 	</div>
-	<div class="info_ul" style="float:left; width:40%;">
+	<div class="info_ul" style="float:left; width:80%;">
 			<ul style="margin:0;padding: 0;">
 				@foreach($thirddatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
