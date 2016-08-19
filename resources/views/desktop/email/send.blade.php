@@ -123,7 +123,7 @@
 		</div>
 		<div class="info_ul" style="float:left; width:18%;">
 			<ul style="margin:0;padding: 0;">
-				<li class="margin-left:0px !important; color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서1</li>
+				<li class="color1" style="margin-left:0px !important;  background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서1</li>
 				@foreach($firstdatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left; border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
@@ -131,7 +131,7 @@
 		</div>
 		<div class="info_ul" style="float:left; width:18%;">
 			<ul style="margin:0;padding: 0;">
-				<li class="margin-left:0px !important; color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서2</li>
+				<li class="color1" style=" margin-left:0px !important; background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서2</li>
 				@foreach($seconddatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
@@ -139,7 +139,7 @@
 		</div>
 		<div class="info_ul" style="float:left; width:18%;">
 			<ul style="margin:0;padding: 0;">
-				<li class="margin-left:0px !important; color1" style="background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서3</li>
+				<li class="color1" style="margin-left:0px !important;  background-color: #ededed;font-weight: bold;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;background-color: #ededed;">견적서3</li>
 				@foreach($thirddatas as $key => $value)
 				<li style="margin-left:0px !important; text-align: left;border:1px solid #dcdcdc;list-style: none;padding: 20px 0;text-align: center;height: 60px;box-sizing: border-box;border-top:3px solid #848383;">{{$value}}</li>	
 				@endforeach
