@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="{{ URL::asset('css/common.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/base.css') }}">
     <link rel="shortcut icon" href="{{ asset('images/main/favicon.ico') }}" >
-
+    <!--[if IE 9 ]>
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/ie9.css') }}">
+    <![endif]-->
     <!-- jquery -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="{{ URL::asset('js/jquery-1.10.2.min.js') }}"></script>

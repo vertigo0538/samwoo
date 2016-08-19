@@ -140,25 +140,33 @@ $(function(){
                 '   <div class="select_second">'+
                 '       <p>2차분류</p>'+
                 '       <ul>'+
-                '           <li class="ss_1">'+
+                '           <li class="ss_1 cf">'+
                 '               <span class="ss_text text_1">• 차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common1" name="onedepth2"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common1" name="onedepth2"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="ss_2">'+
+                '           <li class="ss_2 cf">'+
                 '               <span class="ss_text text_2">• 상세차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common2" name="twodepth2"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common2" name="twodepth2"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="ss_3">'+
+                '           <li class="ss_3 cf">'+
                 '               <span class="ss_text text_3">• 보수부위</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common3" name="threedepth2"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common3" name="threedepth2"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="except">'+
+                '           <li class="except cf">'+
                 '               <span class="ss_text">• 규격</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common4" name="fourdepth2"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common4" name="fourdepth2"></select>'+
+                '               </div>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -215,25 +223,33 @@ $(function(){
                 '   <div class="select_second">'+
                 '       <p>2차분류</p>'+
                 '       <ul>'+
-                '           <li class="ss_1">'+
+                '           <li class="ss_1 cf">'+
                 '               <span class="ss_text text_1">• 차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common1" name="onedepth3"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common1" name="onedepth3"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="ss_2">'+
+                '           <li class="ss_2 cf">'+
                 '               <span class="ss_text text_2">• 상세차종</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common2" name="twodepth3"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common2" name="twodepth3"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="ss_3">'+
+                '           <li class="ss_3 cf">'+
                 '               <span class="ss_text text_3">• 보수부위</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common3" name="threedepth3"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common3" name="threedepth3"></select>'+
+                '               </div>'+
                 '           </li>'+
-                '           <li class="except">'+
+                '           <li class="except cf">'+
                 '               <span class="ss_text">• 규격</span>'+
                 '               <span class="under_arrow"></span>'+
-                '               <select class="common4" name="fourdepth3"></select>'+
+                '               <div class="select_ie">'+
+                '                   <select class="common4" name="fourdepth3"></select>'+
+                '               </div>'+
                 '           </li>'+
                 '       </ul>'+
                 '   </div>'+
@@ -716,14 +732,14 @@ $('.select_wrap').delegate('select[name=fourdepth]','change',function(){
     var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-        	_this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")		
+        	_this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")		
         break;
         case "두께*폭(19*80)" :
             // if(sel.val() == "SOLID(솔리드)"){
             //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             // }
             if(sel.val() == "기타(별도기재부탁드립니다)"){
-                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
+                _this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             }
             
         break;
@@ -737,14 +753,14 @@ $('.select_wrap').delegate('select[name=fourdepth2]','change',function(){
     var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")        
+            _this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")        
         break;
         case "두께*폭(19*80)" :
             // if(sel.val() == "SOLID(솔리드)"){
             //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             // }
             if(sel.val() == "기타(별도기재부탁드립니다)"){
-                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")            
+                _this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth2\"></textarea></li>")            
             }
             
         break;
@@ -758,14 +774,14 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
     var sel = div.find('select[name=threedepth],select[name=threedepth2],select[name=threedepth3]');
     switch(val){
         case "기타(별도기재부탁드립니다)" :
-            _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")        
+            _this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")        
         break;
         case "두께*폭(19*80)" :
             // if(sel.val() == "SOLID(솔리드)"){
             //     _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth\"></textarea></li>")            
             // }
             if(sel.val() == "기타(별도기재부탁드립니다)"){
-                _this.parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")            
+                _this.parent().parent().parent().append("<li class=\"hi\"><textarea name=\"fivedepth3\"></textarea></li>")            
             }
             
         break;
@@ -819,25 +835,33 @@ $('.select_wrap').delegate('select[name=fourdepth3]','change',function(){
 		            <div class="select_second">
 		                <p>2차분류</p>
 		                <ul>
-		                    <li class="ss_1">
+		                    <li class="ss_1 cf">
 		                        <span class="ss_text text_1">• 차종</span>
 		                        <span class="under_arrow"></span>
-		                        <select class="common1" name="onedepth"></select>
+		                        <div class="select_ie">
+                                    <select class="common1" name="onedepth" style=""></select>
+                                </div>
                             </li>
-		                    <li class="ss_2">
+		                    <li class="ss_2 cf">
 		                        <span class="ss_text text_2">• 상세차종</span>
 		                        <span class="under_arrow"></span>
-		                        <select class="common2" name="twodepth"></select>
+		                        <div class="select_ie">
+                                    <select class="common2" name="twodepth"></select>
+                                </div> 
                             </li>
-		                    <li class="ss_3">
+		                    <li class="ss_3 cf">
 		                        <span class="ss_text text_3">• 보수부위</span>
 		                        <span class="under_arrow"></span>
-		                        <select class="common3" name="threedepth"></select>
+		                        <div class="select_ie">
+                                    <select class="common3" name="threedepth"></select>
+                                </div>
                             </li>
-		                    <li class="except">
+		                    <li class="except cf">
 		                        <span class="ss_text">• 규격</span>
 		                        <span class="under_arrow"></span>
-		                        <select class="common4" name="fourdepth"></select>
+		                        <div class="select_ie cf">
+                                    <select class="common4" name="fourdepth"></select>
+                                </div>
                             </li>
                         </ul>
 		            </div>

@@ -2,6 +2,9 @@
 body,html{
 	height: 100% !important;
 }
+select::-ms-expand {
+    display: none;
+}
 #wrap_main{
 	width: 960px;
 	margin: 100px auto 0;
@@ -749,9 +752,20 @@ div.sub_header4{
 	margin-top:30px;
 	position: relative;
 }
+.page_content .select_wrap .select_box .select_second > ul > li:first-child{
+	/*margin-top:55px;*/
+}
 .page_content .select_wrap .select_box .select_second span{
-	display: inline-block;
-	width: 150px;
+	padding-top: 15px;
+	float: left;
+	display:block;
+	width: 165px;
+}
+.select_ie{
+	width:370px; 
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #dcdcdc;
 }
 .page_content .select_wrap .select_box .select_second span.under_arrow{
 	width: 1px;
@@ -760,7 +774,7 @@ div.sub_header4{
 	/*background: url(../images/quota/under_arrow.png) center center no-repeat;*/
 	position: absolute;
 	top: 0px;
-	right: 50px;
+	right: 55px;
 	box-sizing: border-box;
 }
 .page_content .select_wrap .select_box .select_second select,
@@ -774,12 +788,15 @@ div.sub_header4{
 	padding-left: 15px;
 	color: #919191;
 }
+.page_content .select_wrap .select_box .select_second textarea{
+	width: 371px;
+}
 .page_content .select_wrap .select_box .select_second select{
-	background: url(../images/quota/under_arrow.png) right 18px center no-repeat;
+	background: url(../images/quota/under_arrow.png) right 35px center no-repeat;
 }
 .page_content .select_wrap .select_box .select_second textarea{
 	margin-bottom: 30px;
-    margin-left: 153px;
+    margin-left: 165px;
     box-sizing:border-box;
     height: 120px;
 }
