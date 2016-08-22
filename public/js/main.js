@@ -32,7 +32,7 @@ $(function(){
 	// });
 	$(".dropdown").mouseenter(function(){
 		$(".dropdown_wrap").slideDown(300);
-		$(this).find($(".sub_header")).fadeIn(800);
+		$(this).find($(".sub_header")).stop().fadeIn(800);
 		$(".page_content").addClass("zindex");
 		$("#header_wrapm,.main_header_wrap").addClass("down");
 		$(".layer").show();
@@ -40,7 +40,7 @@ $(function(){
 	$(".dropdown").mouseleave(function(){
 		//$(".dropdown_wrap").slideUp(300);
 		$(".page_content").removeClass("zindex");
-		$(this).find($(".sub_header")).hide();
+		$(this).find($(".sub_header")).stop().hide();
 		$(".layer").hide();
 	});
 	$(".nav > ul > li:last-child").mouseenter(function(){

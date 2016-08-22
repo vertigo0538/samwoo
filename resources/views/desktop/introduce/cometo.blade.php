@@ -63,9 +63,9 @@
 
 	});
         		//줌 컨트롤러
-        		var oSlider = new nhn.api.map.ZoomControl();
-                oMap.addControl(oSlider);
-                oSlider.setPosition({ top:15, left:15 });
+        		// var oSlider = new nhn.api.map.ZoomControl();
+          //       oMap.addControl(oSlider);
+          //       oSlider.setPosition({ top:15, left:15 });
                 
 
 
@@ -108,9 +108,9 @@
 
 	});
         		//줌 컨트롤러
-        		var oSlider2 = new nhn.api.map.ZoomControl();
-                oMap2.addControl(oSlider2);
-                oSlider2.setPosition({ top:15, left:15 });
+        		// var oSlider2 = new nhn.api.map.ZoomControl();
+          //       oMap2.addControl(oSlider2);
+          //       oSlider2.setPosition({ top:15, left:15 });
                 
 
 

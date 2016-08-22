@@ -2,8 +2,8 @@
 @section('sub_content')
 	<section class="description img_1">
 		<h3>목재타입 시공 이미지</h3>
-		<p>목재타입 BOARD는 높은 탄성지수와 강도가 여타 소재들에 비해 강한것이 특징이며, 강도에 비해 낮은 비중으로 
-		   차체 경량화에 큰 도움을 주고 있습니다.</p>
+		<p>천연 목재가 갖는 특장점인 높은 탄성지수와 휨강도는 제품을 상하지 않게 하며, 
+			복원력이 뛰어나 중량물 적재시 적재함의 평탄도를 유지해줍니다.</p>
 		<img src="{{URL::asset('images/special/wing_1-1.jpg')}}" alt="목재타입 시공 이미지" class="mb10">
 		<img src="{{URL::asset('images/special/wing_1-2.jpg')}}" alt="목재타입 시공 이미지">
 	</section>
