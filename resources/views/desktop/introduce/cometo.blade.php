@@ -51,7 +51,7 @@
          	var oMap = new nhn.api.map.Map(document.getElementById('map'), {
                 point : oPoint,
                 zoom : 12,
-                enableWheelZoom : true,
+                enableWheelZoom : false,
                 enableDragPan : true,
                 enableDblClickZoom : true,
                 mapMode : 0,
@@ -96,7 +96,7 @@
          	var oMap2 = new nhn.api.map.Map(document.getElementById('map2'), {
                 point : oPoint2,
                 zoom : 12,
-                enableWheelZoom : true,
+                enableWheelZoom : false,
                 enableDragPan : true,
                 enableDblClickZoom : true,
                 mapMode : 0,
