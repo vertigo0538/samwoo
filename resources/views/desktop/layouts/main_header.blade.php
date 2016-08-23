@@ -79,7 +79,7 @@
 									</ul>	
 								</section>
 								<section class="mgr">
-									<h3>상용트럭 적재함 부품</h3>
+									<h3>상용트럭 적재함 보수용목재</h3>
 									<ul class="cf">
 										<li><a href="/commontruck/sangbosu/sangbosu_0">C/B(갈비대/보강목)</a></li>
 										<li><a href="/commontruck/sangbosu/sangbosu_1">F/B(바닥재)</a></li>
