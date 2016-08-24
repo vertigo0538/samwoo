@@ -27,7 +27,7 @@
 									<h3 class="except_right"><a href="/specialvehicle/peong">평판/장폭 및 로베드 트레일러</a></h3>
 								</section>
 								<section>
-									<h3>윙바디용 바닥재</h3>
+									<h3><a href="/specialvehicle/wing/wing_0">윙바디용 바닥재</a></h3>
 									<ul class="cf">
 										<li><a href="/specialvehicle/wing/wing_0">목재타입</a></li>
 										<li><a href="/specialvehicle/wing/wing_1">합판타입</a></li>
@@ -35,7 +35,7 @@
 									</ul>	
 								</section>
 								<section class="mgr">
-									<h3>탑차용 바닥재</h3>
+									<h3><a href="/specialvehicle/topcar/topcar_0">탑차용 바닥재</a></h3>
 									<ul class="cf">
 										<li><a href="/specialvehicle/topcar/topcar_0">목재타입</a></li>
 										<li><a href="/specialvehicle/topcar/topcar_1">합판타입</a></li>
@@ -72,15 +72,15 @@
 							</div>
 							<div class="second_depth cf">
 								<section>
-									<h3>상용트럭(전차종) 보강목</h3>
+									<h3><a href="/commontruck/sangall/sangall_0">상용트럭(전차종) 보강목</a></h3>
 									<ul class="cf">
-										<li><a href="/commontruck/sangall/sangall_0">아피동</a></li>
+										<li><a href="/commontruck/sangall/sangall_0">아피통</a></li>
 										<li><a href="/commontruck/sangall/sangall_1">국내원목</a></li>
 										<li class="mgb"><a href="/commontruck/sangall/sangall_2">신제품</a></li>
 									</ul>	
 								</section>
 								<section class="mgr">
-									<h3>상용트럭 적재함 보수용목재</h3>
+									<h3><a href="/commontruck/sangbosu/sangbosu_0">상용트럭 적재함 보수용목재</a></h3>
 									<ul class="cf">
 										<li><a href="/commontruck/sangbosu/sangbosu_0">C/B(갈비대/보강목)</a></li>
 										<li><a href="/commontruck/sangbosu/sangbosu_1">F/B(바닥재)</a></li>
@@ -108,7 +108,7 @@
 									<h3 class="except_right"><a href="/construction/dec">데크재(야외 데크재용)</a></h3>
 								</section>
 								<section>
-									<h3>후로링(건축 및 체육관 외)</h3>
+									<h3><a href="/construction/huroring/huroring_0">후로링(건축 및 체육관 외)</a></h3>
 									<ul class="cf">
 										<li><a href="/construction/huroring/huroring_0">후로링</a></li>
 										<li><a href="/construction/huroring/huroring_1">코팅후로링</a></li>

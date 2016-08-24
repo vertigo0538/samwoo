@@ -55,7 +55,11 @@
 
 			<div class="email_right">
 				<h3>최종제품 내역확인</h3>
-				<div style="border:1px solid #e5e5e5; border-top:3px solid #848383; overflow:hidden;">
+				<p class="more">아래 버튼을 누르시면 제품 내역을 확인하실 수 있습니다.</p>
+				<div class="add_button">
+					<a href="#none"></a>
+				</div>
+				<div class="more_list" style="border:1px solid #e5e5e5; border-top:3px solid #848383; overflow:hidden; display:none;">
 				@foreach($datas as $key => $value)
 					<div>
 						<input type="text" value="{{$value}}" name="{{$key}}" readonly="readonly">

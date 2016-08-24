@@ -8,7 +8,7 @@
 		</article>
 		<article style="padding:20px 0;">현재 전 분야에 걸쳐 안정된 공급과 우수한 품질로써 업계를 선도해나가고 있으며,<br>
 		앞으로도 고객 여러분이 보내주신 성원과 격려에 부응하고자 꾸준한 노력과 혁신으로<br>
-		고객을 위한 초고의 가치를 창출해나가는 기업으로 성장해나갈 것입니다.
+		고객을 위한 최고의 가치를 창출해나가는 기업으로 성장해나갈 것입니다.
 		</article>
 		<article>감사합니다.</article>
 		<div style="text-align:left; float:none; padding:60px 0; border-bottom:1px solid #dcdcdc;">

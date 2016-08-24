@@ -10,7 +10,7 @@
     <title>삼우특장 플러스</title>
     <link rel="stylesheet" href="{{ URL::asset('css/common.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/base.css') }}">
-    <link rel="shortcut icon" href="{{ asset('images/main/favicon.ico') }}" >
+    <link rel="shortcut icon" href="{{ asset('images/main/shortcut.png') }}" >
     <!--[if IE 9 ]>
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/ie9.css') }}">
     <![endif]-->

@@ -5,7 +5,7 @@
 				<span class="bar2"></span>
 				<span>대표 : 김경모</span>
 				<span class="bar2"></span>
-				<span>사업자등록번호 : 000-00-00000</span>
+				<span>사업자등록번호 : 509-81-05078</span>
 			</p>
 			<p style="padding:10px 0;">
 				<span>인천광역시 중구 영종대로 327번길 12-2, 3층(운서동)</span>

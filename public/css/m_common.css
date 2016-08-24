@@ -347,7 +347,7 @@ body{
 	text-align: center;
 }
 #wrap_main2 .sub_content section{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 #wrap_main2 .sub_content section:first-child{
 	margin-top: 20px;
@@ -434,6 +434,8 @@ body{
 #wrap_main2 .email_box p{
 	border-top: 3px solid #848383;
 	font-weight: bold;
+	text-align: left;
+	padding-left: 25px;
 }
 #wrap_main2 .select_box .select_first input{
 	position: absolute;
@@ -533,12 +535,14 @@ body{
 	font-weight: bold;
 	font-size: 11px;
 }
-#wrap_main2 .select_wrap .add_button a{
+#wrap_main2 .select_wrap .add_button a,
+#wrap_main2 .email_wrap .add_button a{
 	display: block;
 	padding: 20px 0;
 	height: 20px;
 	background:#ededed url(../images/quota/add.png) center center no-repeat;
 	background-size:19px 19px;
+	border: 1px solid #dcdcdc;
 }
 #wrap_main2 .select_wrap .select_box_wrap .delete {
     display: inline-block;
@@ -554,8 +558,9 @@ body{
 }
 .hi textarea{
 	width: 100%;
-	border: 1px solid #ededed;
+	border: 1px solid #dcdcdc;
 	height: 200px;
+	box-sizing: border-box;
 }
 /*step1끝*/
 /*step버튼*/
@@ -578,7 +583,7 @@ body{
     background-size: 20px 19px;
 }
 #wrap_main2 .email_button{
-	padding: 20px 0;
+	padding: 40px 0 20px;
 	width: 100%;
 }
 #wrap_main2 .email_wrap .next{
@@ -671,6 +676,15 @@ body{
 	margin-bottom: 10px;
 }
 
+#wrap_main2 .email_wrap .email_right .more{
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	background: url(../m_images/quota/more_down.png)0px center no-repeat;
+	background-size: 7px 5px;
+
+}
 #wrap_main2 .email_wrap .email_right input {
 	font-size: 13px;
 	padding: 20px 0;
@@ -821,11 +835,11 @@ body{
 /*회사소개페이지*/
 
 
-#wrap_main2 .sub_content .hello{
+/*#wrap_main2 .sub_content .hello{
 	border: 1px solid #ededed;
 	padding: 0px 20px;
 	padding-bottom: 15px;
-}
+}*/
 #wrap_main2 .sub_content .hello p{
 	line-height: 30px !important;
 	border: none !important;
@@ -854,8 +868,8 @@ body{
 .go_top{
 	width: 52px;
 	position: fixed;
-	bottom: 0;
-	right: 20px;
+	bottom: 40px;
+	right: 35px;
 	/*display: none;*/
 	z-index: 9999;
 	cursor: pointer;
@@ -864,7 +878,9 @@ body{
 	color: #e51d2e !important;
 	font-weight: bold;
 }
-	
+.bdtop{
+	border-top:1px solid #cecece;
+}	
 
 
 

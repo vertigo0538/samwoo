@@ -78,8 +78,13 @@ $(function(){
 	});
 
 
-	//new IScroll('#wrapper', {click:true});
+	//step2 견적내용 더보기
 
+	$(".email_right .add_button").on("click",function(){
+		$(".more_list").show();
+		$(this).hide();
+		$(".more").hide();
+	});
 
 
 	
