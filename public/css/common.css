@@ -213,7 +213,7 @@ div.sub_header4{
  .sub_header .second_depth > section ul li{
 	width: 164px;
 	float: left;
-	background:url(../images/main/dot.png) left center no-repeat;
+	background:url(../images/main/dot.png) left 5px no-repeat;
 	background-size: 4px 4px;
 	/*border: 1px solid red;*/
 	padding-left: 10px;
