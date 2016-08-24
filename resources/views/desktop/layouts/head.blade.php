@@ -22,7 +22,7 @@
     <script type="text/javascript" src="{{ URL::asset('js/jquery.bpopup.min.js') }}"></script>
     <!-- jquery -->
     <!-- 구글지도 -->
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
+    <!-- <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script> -->
     <!-- 네이버지도 -->
     <script src="http://openapi.map.naver.com/openapi/v2/maps.js?clientId=VPxnejdLq_qv5MnPcotG"></script>
 </head>

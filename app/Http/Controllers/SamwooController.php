@@ -37,7 +37,7 @@ class SamwooController extends Controller
     public function specialvehicleSub($pageId,$subId)
     {
         $title = $pageId;
-        $title1 = ['평판/장폭 및 로베드 트레일러','윙바디용 바닥재','탑차용 바닥재','덤프/특장차 라이너','탑차용 swing door'];    
+        $title1 = ['평판/장폭 및 로베드 트레일러','윙바디용 바닥재','탑차용 바닥재','덤프/특장차 라이너','탑차용 SWING DOOR'];    
         $title2 = 'specialvehicle';
         $title3 = array(
                 'wing' => array('목재타입','합판타입','무늬합판'),
