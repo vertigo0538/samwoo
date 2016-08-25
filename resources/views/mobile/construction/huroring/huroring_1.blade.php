@@ -2,7 +2,7 @@
 @section('sub_content')
 	<section class="description img_1">
 		<h3>코팅 후로링</h3>
-		<img src="{{URL::asset('images/construction/none.png')}}" alt="코팅 후로링" class="mb10">
+		<img src="{{URL::asset('images/construction/ko_1.jpeg')}}" alt="코팅 후로링" class="mb10">
 	</section>
 	<section class="triple cf">
 		<h3>목재 상세 이미지</h3>
