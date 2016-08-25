@@ -221,7 +221,7 @@ div.sub_header4{
 	margin-bottom: 20px;
 }
  .sub_header .second_depth > section ul li:hover{
-	background:url(../images/main/dot_hover.png) center left no-repeat;
+	background:url(../images/main/dot_hover.png) left 5px no-repeat;
 	background-size: 4px 4px;
 }
  .sub_header .second_depth > section ul li:hover a{
