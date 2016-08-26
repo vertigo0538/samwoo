@@ -447,10 +447,7 @@ div.sub_header4{
 	height: 73px;
 	box-sizing: border-box;
 }
-#sidebar .menu{
-	border-bottom:1px solid #dcdcdc;	
-	
-}
+
 .menu_block{
 	display: block;
 	padding: 25px 0 25px 15px;
@@ -513,6 +510,8 @@ div.sub_header4{
 	height: 100%;
 	padding: 25px 0;
 	background:#fbfbfb url(../images/main/go_quota.png) 15px center no-repeat;
+	border-top:1px solid #dcdcdc;	
+	border-bottom:1px solid #dcdcdc;	
 }
 /*서브페이지 사이드바 끝*/
 .down_arrow.active{

@@ -29,17 +29,17 @@
 		<ul class="cf">
 			<li>
 				<span class="info_type">주소</span>
-				<span class="info_value">인천광역시 중구 영종대로 327번길 12-2, 3층(운서동)</span>
+				<span class="info_value">전북 군산시 서수면 마룡리 93-10</span>
 			</li>
 		</ul>
 		<ul class="cf">
 			<li>
 				<span class="info_type">전화</span>
-				<span class="info_value">032-577-2584</span>
+				<span class="info_value">063-451-1271~3</span>
 			</li>
 			<li>
 				<span class="info_type">팩스</span>
-				<span class="info_value">032-577-2584</span>
+				<span class="info_value">063-451-1274</span>
 			</li>
 		</ul>
 	</div>
@@ -92,7 +92,7 @@
 				});
 		}
 		function map2(){
-			var oPoint2 = new nhn.api.map.LatLng(37.4826187, 126.5080421);
+			var oPoint2 = new nhn.api.map.LatLng(36.0139814, 126.8816175);
          	var oMap2 = new nhn.api.map.Map(document.getElementById('map2'), {
                 point : oPoint2,
                 zoom : 12,

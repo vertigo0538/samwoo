@@ -50,7 +50,7 @@
 						<li><a href="/commontruck/sangall/sangall_2">신제품</a></li>
 						<li><a href="/commontruck/sangall/sangall_1">국내원목</a></li>
 					</ul>
-					<h3 class="bdtop"><a href="/commontruck/sangbosu/sangbosu_0">A/S부품</a></h3>	
+					<h3 class="bdtop"><a href="/commontruck/sangbosu/sangbosu_0">보수용목재</a></h3>	
 					<ul>
 						<li><a href="/commontruck/sangbosu/sangbosu_0">C/B(갈비대/보강목)</a></li>
 						<li><a href="/commontruck/sangbosu/sangbosu_1">F/B(바닥재)</a></li>
