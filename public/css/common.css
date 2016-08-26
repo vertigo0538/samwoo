@@ -437,7 +437,9 @@ div.sub_header4{
 	border-right: 1px solid #dcdcdc;
 	height: 100%;
 }
-
+.sidebar_border > div{
+	border-bottom: 1px solid #dcdcdc;
+}
 #sidebar h2{
 	color: #fff;
 	font-size: 22px;
@@ -480,8 +482,7 @@ div.sub_header4{
 }
 #sidebar .aru_sub > ul{
 	padding: 25px 0 25px 25px;
-	border-bottom: 1px solid #dcdcdc;
-
+	border-top: 1px solid #dcdcdc;
 }
 #sidebar .aru_sub > ul > li{
 	margin-bottom: 15px;
@@ -499,7 +500,6 @@ div.sub_header4{
 }
 #sidebar .empty{
 	height: 100px;
-	border-bottom: 1px solid #dcdcdc;
 }
 #sidebar .go_quota{
 	height: 60px;
@@ -510,7 +510,6 @@ div.sub_header4{
 	height: 100%;
 	padding: 25px 0;
 	background:#fbfbfb url(../images/main/go_quota.png) 15px center no-repeat;
-	border-top:1px solid #dcdcdc;	
 	border-bottom:1px solid #dcdcdc;	
 }
 /*서브페이지 사이드바 끝*/
