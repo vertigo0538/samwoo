@@ -131,7 +131,7 @@
 		
                 oMap2.attach('click', function(){
 					//alert(evt.point.getY() + ', ' + evt.point.getX());
-					var url ="http://map.naver.com/?menu=location&mapMode=0&lat=37.4826196&lng=126.508041&dlevel=12&searchCoord=126.9351759%3B37.5739086&query=7J247LKc6rSR7Jet7IucIOykkeq1rCDsmIHsooXrjIDroZwgMzI367KI6ri4IDEyLTIsIDPsuLUo7Jq07ISc64%2BZKQ%3D%3D&mpx=09410117%3A37.5739086%2C126.9351759%3AZ11%3A0.0212703%2C0.0213682&tab=1&enc=b64"
+					var url ="http://map.naver.com/?dlevel=12&lat=36.0139814&lng=126.8816175&query=7KCE652867aB64%2BEIOq1sOyCsOyLnCDshJzsiJjrqbQg66eI66Oh66asIDkzLTEw&type=ADDRESS&tab=1&isDetailAddress=true&isNewAddress=false&rcode=1313034024&enc=b64"
 					window.open(url);
 				});
 		}	

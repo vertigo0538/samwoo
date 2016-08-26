@@ -7,7 +7,7 @@
 		</p>
 		<img class="mb10" src="{{URL::asset('images/common/domestic_1-1.jpg')}}" alt="신소재 시공이미지">
 		<img class="mb10" src="{{URL::asset('images/common/domestic_1-2.jpg')}}" alt="신소재 시공이미지">
-		<p class="img_description">건조 및 후처리(케미컬)한 신제품으로써 일본으로 수출되어 중형까지 사용되는 제품으로<br>추후 	대형차종차까지 확대 적용될 예정입니다.</p>
+		<p class="img_description">건조 및 후처리(케미컬)한 신제품으로써 일본으로 수출되어 중형까지 사용되는 제품으로<br>추후 대형차종까지 확대 적용될 예정입니다.</p>
 	</section>
 	
 	<section class="cf">

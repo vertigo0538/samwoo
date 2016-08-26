@@ -3,7 +3,7 @@
 	<section class="description">
 		<h3>C/B(갈비대) 시공이미지</h3>
 		<p>적재함의 기본이 되는 목재로써 적재물의 하중을 버텨주고 지지해주는 가장 기본적인 목재입니다.
-		  <br>특수코팅으로 그 사용연한과 기간을 대폭 늘려 효율성을 극대화 하였습니다.</p>
+		  <br>특수코팅으로 제품의 수명을 대폭 늘려 효율성을 극대화 하였습니다.</p>
 		<img src="{{URL::asset('images/common/cb_1.jpg')}}" alt="C/B(갈비대) 시공">
 	</section>
 	<section class="triple cf">

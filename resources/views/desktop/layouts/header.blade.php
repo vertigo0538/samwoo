@@ -75,8 +75,8 @@
 									<h3><a href="/commontruck/sangall/sangall_0">상용트럭(전차종) 보강목</a></h3>
 									<ul class="cf">
 										<li><a href="/commontruck/sangall/sangall_0">아피통</a></li>
-										<li><a href="/commontruck/sangall/sangall_1">국내원목</a></li>
-										<li class="mgb"><a href="/commontruck/sangall/sangall_2">신제품</a></li>
+										<li><a href="/commontruck/sangall/sangall_1">신제품</a></li>
+										<li class="mgb"><a href="/commontruck/sangall/sangall_2">국내원목</a></li>
 									</ul>	
 								</section>
 								<section class="mgr">
