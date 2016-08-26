@@ -1,7 +1,7 @@
 @extends('desktop.commontruck.index')
 @section('sub_content')
 	<section class="description">
-		<h3>신소재 시공 이미지</h3>
+		<h3>{{$title3[$title][1]}} 시공 이미지</h3>
 		<p>축 추가 또는 적재함 보강 및 보수시 사용되는 목재이며, 특수 코팅을 이용하여 목재의 변화를 극소화 시켰습니다.
 		   <br> * 보강목 공급 가능 차종 : 소형 / 중형 / 대형
 		</p>

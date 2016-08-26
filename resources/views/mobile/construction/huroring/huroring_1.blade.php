@@ -1,7 +1,7 @@
 @extends('mobile.construction.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>코팅 후로링</h3>
+		<h3>{{$title3[$title][1]}}</h3>
 		<img src="{{URL::asset('images/construction/ko_1.jpeg')}}" alt="코팅 후로링" class="mb10">
 	</section>
 	<section class="triple cf">

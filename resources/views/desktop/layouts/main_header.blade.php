@@ -41,10 +41,10 @@
 									</ul>	
 								</section>
 								<section class="mt20">
-									<h3 class="except_right"><a href="/specialvehicle/peong">덤프/특장차 라이너</a></h3>
+									<h3 class="except_right"><a href="/specialvehicle/dump">덤프/특장차 라이너</a></h3>
 								</section>
 								<section class="mt20">
-									<h3 class="except_right"><a href="/specialvehicle/peong">탑차용 SWING DOOR</a></h3>
+									<h3 class="except_right"><a href="/specialvehicle/swing">탑차용 SWING DOOR</a></h3>
 								</section>
 								<!-- <ul class="cf">
 									<li><a href="/specialvehicle/peong">평판/장폭 및 로베드 트레일러</a></li>
@@ -75,7 +75,7 @@
 									<ul class="cf">
 										<li><a href="/commontruck/sangall/sangall_0">아피통</a></li>
 										<li><a href="/commontruck/sangall/sangall_1">신제품</a></li>
-										<li class="mgb"><a href="/commontruck/sangall/sangall_2">국내원목</a></li>
+										<li class="mgb"><a href="/commontruck/sangall/sangall_2">국내 수입원목</a></li>
 									</ul>	
 								</section>
 								<section class="mgr">

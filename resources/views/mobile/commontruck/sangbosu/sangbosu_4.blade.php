@@ -1,7 +1,7 @@
 @extends('mobile.commontruck.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>아대 시공이미지</h3>
+		<h3>{{$title3[$title][4]}} 시공 이미지</h3>
 		<p>제품 고정시 손상 방지를 위해 제품에 덧대어주는 화물차용품입니다. 
 		<br>* 동남아 직수입</p>
 		<img src="{{URL::asset('images/common/ad_1.jpg')}}" alt="아대 시공이미지">

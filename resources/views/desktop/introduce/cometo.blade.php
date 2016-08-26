@@ -29,7 +29,7 @@
 		<ul class="cf">
 			<li>
 				<span class="info_type">주소</span>
-				<span class="info_value">전북 군산시 서수면 마룡리 93-10</span>
+				<span class="info_value">전북 군산시 서수면 상장곤윗길89</span>
 			</li>
 		</ul>
 		<ul class="cf">

@@ -1,7 +1,7 @@
 @extends('mobile.commontruck.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>L/N(라이너)시공 이미지</h3>
+		<h3>{{$title3[$title][3]}} 시공 이미지</h3>
 		<p>메인 프레임 상단에 장착되는 목재로써 진동/소음을 감소 시켜주는 역할을 합니다.
 		</p>
 		<img src="{{URL::asset('images/common/ln_1.jpg')}}" alt="L/N(라이너) 시공이미지">

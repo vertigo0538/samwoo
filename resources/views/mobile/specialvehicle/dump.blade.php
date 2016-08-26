@@ -1,7 +1,7 @@
 @extends('mobile.specialvehicle.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>덤프/특장차 라이너</h3>
+		<h3>{{$title1[3]}}</h3>
 		<p>일반 트럭적재함의 Liner와 Spacer의 역할을 하며, 샤시와 탑간의 간섭을 막아주고 부품손상을 방지하는 기능을 합니다.</p>	
 		<img src="{{URL::asset('images/special/dump_1.jpg')}}" alt="덤프/특장차 라이너" class="mb10">
 	</section>

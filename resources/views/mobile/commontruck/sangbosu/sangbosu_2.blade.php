@@ -1,7 +1,7 @@
 @extends('mobile.commontruck.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>G/B(문짝)시공 이미지</h3>
+		<h3>{{$title3[$title][2]}} 시공 이미지</h3>
 		<p>적재함의 DOOR역할을 하며 휠감도 및 측면하중에 대한 복원력이 매우 우수합니다.
 		   <br>* 소형트럭 : 특수합판 구성
 		   <br>* 대형트럭 : 목재타입 GATE BOARD 구성

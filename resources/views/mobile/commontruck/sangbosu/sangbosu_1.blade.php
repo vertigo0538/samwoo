@@ -1,7 +1,7 @@
 @extends('mobile.commontruck.index')
 @section('sub_content')
 	<section class="description img_1">
-		<h3>F/B(바닥재) 시공이미지</h3>
+		<h3>{{$title3[$title][1]}} 시공 이미지</h3>
 		<p>적재함의 바닥역할을 하며 운반물을 적재시 미끄럽지 않고 적재하중에 대한 복원력이 매우 우수합니다.
 		   <br>또한 비중이 낮은 반면 높은 강도와 탄성으로 최적의 효율을 지닌 제품입니다.
 		</p>

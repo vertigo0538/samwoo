@@ -1,7 +1,7 @@
 @extends('desktop.specialvehicle.index')
 @section('sub_content')
 	<section class="description">
-		<h3>무늬합판 시공 이미지</h3>
+		<h3>{{$title3[$title][2]}} 시공 이미지</h3>
 		<p>윙바디 윙부위에 적용된 무늬 코팅 합판으로 깔끔한 외곽과 표면으로 제공되며, <br>
 			안정된 품질과 합리적인 가격으로 공급하고 있습니다.</p>
 		<img src="{{URL::asset('images/special/wing_3-1.jpg')}}" alt="무늬합판 시공 이미지" class="mb10">

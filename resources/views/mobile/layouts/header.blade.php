@@ -48,7 +48,7 @@
 					<ul>
 						<li><a href="/commontruck/sangall/sangall_0">아피통</a></li>
 						<li><a href="/commontruck/sangall/sangall_1">신제품</a></li>
-						<li><a href="/commontruck/sangall/sangall_2">국내원목</a></li>
+						<li><a href="/commontruck/sangall/sangall_2">국내 수입원목</a></li>
 					</ul>
 					<h3 class="bdtop"><a href="/commontruck/sangbosu/sangbosu_0">보수용목재</a></h3>	
 					<ul>

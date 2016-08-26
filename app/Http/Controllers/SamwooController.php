@@ -63,7 +63,7 @@ class SamwooController extends Controller
         $title1 = ['상용트럭(전차종) 보강목','상용트럭 적재함 보수용목재'];    
         $title2 = 'commontruck';
         $title3 = array(
-                'sangall' => array('아피통','신제품','국내원목'),
+                'sangall' => array('아피통','신제품','국내 수입원목'),
                 'sangbosu' => array('C/B(갈비대/보강목)','F/B(바닥재)','G/B(문짝)','L/N(라이너)','아대'),
                 'sangbosutap' => array('C/B','F/B','G/B','L/N','아대')
             );
