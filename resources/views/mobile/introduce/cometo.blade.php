@@ -20,7 +20,7 @@
 			</li>
 			<li class="mgb">
 				<span class="info_type">팩스</span>
-				<span class="info_value">032-577-2584</span>
+				<span class="info_value">032-577-2588</span>
 			</li>
 		</ul>
 	</div>
