@@ -1,7 +1,7 @@
 <div id="header_wrap" class="page_header">
 <!-- <div class="page_header"></div> -->
 <div class="dropdown_wrap"></div>
-	<div class="page_bg specialvehicle_bg"></div> <!-- 배경이미지 -->
+	<!-- <div class="page_bg specialvehicle_bg"></div> 배경이미지 -->
 	<div class="main_header_wrap">
 		<header id="main_header" class="cf">
 			<a href="/">

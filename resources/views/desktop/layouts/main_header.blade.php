@@ -1,5 +1,16 @@
-<div class="wrap_main_bg">
-<div id="header_wrap">
+<?php  
+	$uri= $_SERVER['REQUEST_URI'];
+	
+	if($uri == '/')	{ ?>
+		<div class="wrap_main_bg">		
+<?php } ?>
+
+<?php  
+	if($uri == '/')	{ ?>
+		<div id="header_wrap">
+<?php } else { ?>
+		<div id="header_wrap" class="page_header">
+<?php } ?>	
 <div class="dropdown_wrap"></div>
 	<div class="main_header_wrap">
 		<header id="main_header" class="cf">
